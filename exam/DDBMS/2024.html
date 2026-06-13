@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>MAKAUT Distributed Systems (PEC-IT601B) - Solved Paper</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #eef2f7;
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.55;
+            color: #1a2f3a;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 36px;
+            box-shadow: 0 25px 40px -12px rgba(0,0,0,0.18);
+            overflow: hidden;
+            padding: 2rem 2rem 2.5rem 2rem;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #2c6e6b;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        .header h1 {
+            font-size: 1.9rem;
+            color: #1c5a58;
+            font-weight: 700;
+        }
+        .header h2 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #2a7a76;
+            margin-top: 0.3rem;
+        }
+        .badge {
+            display: inline-block;
+            background: #e0f0ee;
+            padding: 0.2rem 1rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #1c6e6a;
+            margin-top: 0.6rem;
+        }
+        .group {
+            margin-top: 2.2rem;
+            border-left: 6px solid #2a8a86;
+            padding-left: 1.3rem;
+        }
+        .group-title {
+            background: linear-gradient(135deg, #1c6e6a, #2a8a86);
+            display: inline-block;
+            padding: 0.3rem 1.5rem;
+            border-radius: 50px;
+            color: white;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.3px;
+        }
+        .qa-block {
+            background: #fefefe;
+            margin: 1.2rem 0;
+            border-radius: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            border: 1px solid #e1eceb;
+            overflow: hidden;
+        }
+        .question {
+            background: #f9fdfc;
+            padding: 0.8rem 1.2rem;
+            font-weight: 700;
+            font-size: 1.02rem;
+            color: #1a7370;
+            border-bottom: 1px solid #dfe9e8;
+        }
+        .answer {
+            padding: 1rem 1.5rem 1.3rem 1.5rem;
+            background: white;
+        }
+        .answer p, .answer li {
+            color: #2c3e45;
+        }
+        .sub-list {
+            margin: 0.6rem 0 0.6rem 1.8rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0.9rem 0;
+            font-size: 0.9rem;
+            border-radius: 16px;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+        th, td {
+            border: 1px solid #cbdde0;
+            padding: 8px 12px;
+            vertical-align: top;
+        }
+        th {
+            background: #e2f0ef;
+            font-weight: 700;
+            color: #145c59;
+        }
+        .highlight {
+            font-weight: 600;
+            color: #1f7e7a;
+        }
+        .code-diagram {
+            font-family: monospace;
+            background: #f2f8f8;
+            padding: 0.7rem 1rem;
+            border-radius: 16px;
+            white-space: pre-line;
+            line-height: 1.4;
+            margin: 0.6rem 0;
+            font-size: 0.85rem;
+        }
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #5e7e7a;
+            border-top: 1px solid #cee0de;
+            padding-top: 1.5rem;
+        }
+        @media (max-width: 650px) {
+            .container {
+                padding: 1.2rem;
+            }
+            .question {
+                font-size: 0.9rem;
+            }
+            .group-title {
+                font-size: 1.2rem;
+            }
+            th, td {
+                font-size: 0.78rem;
+                padding: 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>📡 Distributed Systems</h1>
+        <h2>MAKAUT B.Tech (PEC-IT601B) – Solved Paper</h2>
+        <div class="badge">✅ Group-A (1 Mark) | Group-B (5 Marks) | Group-C (15 Marks) | Exam-ready answers</div>
+    </div>
+
+    <!-- GROUP - A (Very Short Answer) -->
+    <div class="group">
+        <div class="group-title">📌 Group-A (Very Short Answer – 1 Mark Each)</div>
+        <div class="qa-block"><div class="question">(i) The node where distributed transaction originates</div><div class="answer"><p><strong>Answer:</strong> Coordinator Site / Originating Site</p></div></div>
+        <div class="qa-block"><div class="question">(ii) One advantage of DDBMS</div><div class="answer"><p><strong>Answer:</strong> High availability and reliability</p></div></div>
+        <div class="qa-block"><div class="question">(iii) View management in distributed database design</div><div class="answer"><p><strong>Answer:</strong> Process of defining and maintaining global and local user views of distributed data</p></div></div>
+        <div class="qa-block"><div class="question">(iv) Factors governing query optimization</div><div class="answer"><p><strong>Answer:</strong> Communication cost, CPU cost, I/O cost, data location, response time</p></div></div>
+        <div class="qa-block"><div class="question">(v) Distributed concurrency control algorithms</div><div class="answer"><p><strong>Answer:</strong> Lock-based, Timestamp-based, Optimistic protocol</p></div></div>
+        <div class="qa-block"><div class="question">(vi) Shared-memory architecture</div><div class="answer"><p><strong>Answer:</strong> Multiple processors share a common memory and disk</p></div></div>
+        <div class="qa-block"><div class="question">(vii) Purpose of mobile database replication</div><div class="answer"><p><strong>Answer:</strong> To maintain availability and synchronization of data</p></div></div>
+        <div class="qa-block"><div class="question">(viii) Protocol for transactions across databases</div><div class="answer"><p><strong>Answer:</strong> Two Phase Commit (2PC)</p></div></div>
+        <div class="qa-block"><div class="question">(ix) Fragmentation in distributed DB design</div><div class="answer"><p><strong>Answer:</strong> Dividing database into smaller fragments distributed across sites</p></div></div>
+        <div class="qa-block"><div class="question">(x) Goals of transaction management</div><div class="answer"><p><strong>Answer:</strong> Atomicity, Consistency, Isolation, Durability (ACID)</p></div></div>
+        <div class="qa-block"><div class="question">(xi) Parallel architectures in parallel DB</div><div class="answer"><p><strong>Answer:</strong> Shared Memory, Shared Disk, Shared Nothing</p></div></div>
+        <div class="qa-block"><div class="question">(xii) Distributed object management</div><div class="answer"><p><strong>Answer:</strong> Managing distributed objects and providing transparent access</p></div></div>
+    </div>
+
+    <!-- GROUP - B (Short Answer – 5 Marks) -->
+    <div class="group">
+        <div class="group-title">✍️ Group-B (Short Answer – 5 Marks)</div>
+        <div class="qa-block"><div class="question">2. What is Concurrency Control? What is Lock-Based Protocol?</div><div class="answer"><p><strong>Concurrency control</strong> ensures multiple transactions execute simultaneously without inconsistency. <strong>Lock-Based Protocol:</strong> transactions lock data before access (Shared/Exclusive locks). Example: T1 locks A, updates, unlocks; T2 waits. Prevents lost updates but may cause deadlock.</p></div></div>
+        <div class="qa-block"><div class="question">3. Distributed Transparency and Levels</div><div class="answer"><p><strong>Location Transparency:</strong> user unaware of physical location. <strong>Replication Transparency:</strong> multiple copies appear as one. <strong>Fragmentation Transparency:</strong> user sees complete relation despite fragmentation.</p></div></div>
+        <div class="qa-block"><div class="question">4. Short Note on Mobile Database</div><div class="answer"><p>Database supporting wireless access, replication, synchronization. Applications: banking, healthcare, e-commerce. Advantages: anywhere access; disadvantages: security concerns.</p></div></div>
+        <div class="qa-block"><div class="question">5. Advantages and Disadvantages of Replication + Auxiliary Program</div><div class="answer"><p><strong>Advantages:</strong> high availability, faster access, fault tolerance. <strong>Disadvantages:</strong> storage overhead, sync complexity. <strong>Auxiliary Program:</strong> coordinates replicas, monitors updates, maintains consistency.</p></div></div>
+        <div class="qa-block"><div class="question">6. Short Note on MDBS Architecture</div><div class="answer"><p><strong>MDBS (Multi-Database System):</strong> integrates autonomous databases. Architecture: Users → Global Schema → MDBMS → Local Databases. Advantages: autonomy, scalability; disadvantage: integration complexity.</p></div></div>
+    </div>
+
+    <!-- GROUP - C (Long Answer – 15 Marks) -->
+    <div class="group">
+        <div class="group-title">📘 Group-C (Long Answer – 15 Marks) – Detailed Solutions</div>
+
+        <div class="qa-block"><div class="question">7(a) Discuss Various Transaction Models (15 Marks)</div><div class="answer"><p><strong>Flat Transaction:</strong> single atomic unit (BEGIN → COMMIT/ABORT). <strong>Nested Transaction:</strong> parent with child sub-transactions, supports parallelism. <strong>Distributed Transaction:</strong> runs across multiple sites (e.g., bank transfer). <strong>Chained Transaction:</strong> sequence of independent commits. <strong>Workflow Transaction:</strong> business-process oriented. Advantages: reliability, parallelism.</p></div></div>
+        <div class="qa-block"><div class="question">8(a) Why is Commit Protocol Necessary? (15 Marks)</div><div class="answer"><p>Ensures all sites either commit or abort → atomicity in distributed transactions. Needed for consistency, failure handling, recovery. Example: bank transfer (debit success, credit failure) would cause inconsistency without protocol. Protocols: Two-Phase Commit (2PC), Three-Phase Commit (3PC).</p></div></div>
+        <div class="qa-block"><div class="question">9(a) Explain Parallel Database Architecture (15 Marks)</div><div class="answer">
+            <p><strong>Shared Memory:</strong> multiple CPUs share memory/disk → fast but limited scalability. <strong>Shared Disk:</strong> each CPU private memory, shared disk → high availability, disk contention. <strong>Shared Nothing:</strong> each node has CPU+memory+disk → highly scalable, complex communication.</p>
+            <table><th>Architecture</th><th>Scalability</th><th>Fault Tolerance</th></tr>
+            <tr><td>Shared Memory</th><th>Low</th><th>Medium</th></tr>
+            <tr><td>Shared Disk</th><th>Medium</th><th>High</th></tr>
+            <tr><td>Shared Nothing</th><th>High</th><th>Very High</th></tr>
+            </table>
+        </div></div>
+        <div class="qa-block"><div class="question">10(b) Algorithm of Coordinator and Participants in 2PC (15 Marks)</div><div class="answer">
+            <p><strong>Coordinator:</strong> START → Send PREPARE → Receive VOTES → COMMIT/ABORT → Send decision. <strong>Participant:</strong> Receive PREPARE → Vote YES/NO → Wait → COMMIT/ABORT.</p>
+            <div class="code-diagram">Coordinator → PREPARE → Participants → VOTE → Coordinator → COMMIT/ABORT</div>
+        </div></div>
+        <div class="qa-block"><div class="question">10(c) Communication Structure of 2PC (15 Marks)</div><div class="answer"><p><strong>Phases:</strong> Voting Phase (Coordinator sends PREPARE, participants vote) and Decision Phase (Coordinator sends COMMIT/ABORT). Ensures atomic distributed commit.</p></div></div>
+        <div class="qa-block"><div class="question">11(a) Discuss Multidatabase Architecture (15 Marks)</div><div class="answer"><p>Components: Global Schema, Local Schema, MDBMS. Architecture: Users → MDBMS → Local Databases. Advantages: data sharing, autonomy, scalability. Disadvantages: integration complexity, query optimization overhead.</p></div></div>
+        <div class="qa-block"><div class="question">11(b) What is Mobile Database? (15 Marks)</div><div class="answer"><p>Database accessible via mobile devices with wireless access, replication, synchronization. Features: portability, intermittent connectivity, data caching. Applications: GPS, banking, navigation, e-commerce.</p></div></div>
+        <div class="qa-block"><div class="question">11(c) Concurrency Control in Distributed DBMS (15 Marks)</div><div class="answer"><p><strong>Methods:</strong> Locking (2PL), Timestamp-based (older transaction priority), Optimistic validation, Distributed 2PL. Benefits: isolation, consistency, deadlock handling.</p></div></div>
+    </div>
+
+    <!-- summary -->
+    <div style="margin-top: 2.2rem; background: #eaf5f3; border-radius: 28px; padding: 1.2rem 1.8rem;">
+        <h3 style="color: #1c6e6a; margin-bottom: 0.4rem;">📖 Exam-focused Summary – Distributed Systems</h3>
+        <p>✔ Complete coverage of MAKAUT Distributed Systems (PEC-IT601B) – Groups A, B, and C.<br>
+        ✔ Includes transaction models, concurrency control, 2PC, parallel architectures, transparency, replication, mobile databases, multidatabase architecture, and concurrency algorithms.<br>
+        ✔ Answers structured for 1, 5, and 15-mark questions with definitions, tables, diagrams, and exam-style presentation.</p>
+    </div>
+    <footer>
+        📌 MAKAUT B.Tech (IT/CSE) – Distributed Systems Solved Paper <br>
+        Prepared for semester examination reference & revision.
+    </footer>
+</div>
+</body>
+</html>

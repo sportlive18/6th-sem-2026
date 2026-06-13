@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>MAKAUT Distributed Systems (PEC-IT601B) 2024–25 - Solved Paper</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #eef2f7;
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.55;
+            color: #1a2f3a;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 36px;
+            box-shadow: 0 25px 40px -12px rgba(0,0,0,0.18);
+            overflow: hidden;
+            padding: 2rem 2rem 2.5rem 2rem;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #2c6e6b;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        .header h1 {
+            font-size: 1.9rem;
+            color: #1c5a58;
+            font-weight: 700;
+        }
+        .header h2 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #2a7a76;
+            margin-top: 0.3rem;
+        }
+        .badge {
+            display: inline-block;
+            background: #e0f0ee;
+            padding: 0.2rem 1rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #1c6e6a;
+            margin-top: 0.6rem;
+        }
+        .group {
+            margin-top: 2.2rem;
+            border-left: 6px solid #2a8a86;
+            padding-left: 1.3rem;
+        }
+        .group-title {
+            background: linear-gradient(135deg, #1c6e6a, #2a8a86);
+            display: inline-block;
+            padding: 0.3rem 1.5rem;
+            border-radius: 50px;
+            color: white;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.3px;
+        }
+        .qa-block {
+            background: #fefefe;
+            margin: 1.2rem 0;
+            border-radius: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            border: 1px solid #e1eceb;
+            overflow: hidden;
+        }
+        .question {
+            background: #f9fdfc;
+            padding: 0.8rem 1.2rem;
+            font-weight: 700;
+            font-size: 1.02rem;
+            color: #1a7370;
+            border-bottom: 1px solid #dfe9e8;
+        }
+        .answer {
+            padding: 1rem 1.5rem 1.3rem 1.5rem;
+            background: white;
+        }
+        .answer p, .answer li {
+            color: #2c3e45;
+        }
+        .sub-list {
+            margin: 0.6rem 0 0.6rem 1.8rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0.9rem 0;
+            font-size: 0.9rem;
+            border-radius: 16px;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+        th, td {
+            border: 1px solid #cbdde0;
+            padding: 8px 12px;
+            vertical-align: top;
+        }
+        th {
+            background: #e2f0ef;
+            font-weight: 700;
+            color: #145c59;
+        }
+        .highlight {
+            font-weight: 600;
+            color: #1f7e7a;
+        }
+        .code-diagram {
+            font-family: monospace;
+            background: #f2f8f8;
+            padding: 0.7rem 1rem;
+            border-radius: 16px;
+            white-space: pre-line;
+            line-height: 1.4;
+            margin: 0.6rem 0;
+            font-size: 0.85rem;
+        }
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #5e7e7a;
+            border-top: 1px solid #cee0de;
+            padding-top: 1.5rem;
+        }
+        @media (max-width: 650px) {
+            .container {
+                padding: 1.2rem;
+            }
+            .question {
+                font-size: 0.9rem;
+            }
+            .group-title {
+                font-size: 1.2rem;
+            }
+            th, td {
+                font-size: 0.78rem;
+                padding: 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>📡 Distributed Systems</h1>
+        <h2>MAKAUT B.Tech (PEC-IT601B) 2024–25 – Detailed Solutions</h2>
+        <div class="badge">✅ Group-C (15-Mark Answers) | Exam-ready format</div>
+    </div>
+
+    <!-- GROUP - C: LONG ANSWERS (15 MARKS EACH) -->
+    <div class="group">
+        <div class="group-title">📘 Group-C (Long Answer – 15 Marks) – Detailed Solutions</div>
+
+        <!-- 7(a) Transaction Models -->
+        <div class="qa-block"><div class="question">7(a) Discuss Various Transaction Models (15 Marks)</div><div class="answer">
+            <p><strong>1. Flat Transaction Model:</strong> Simplest model, entire transaction as one unit, follows ACID. <em>Example:</em> BEGIN; Update A; Update B; COMMIT. Failure → full rollback.</p>
+            <p><strong>2. Nested Transaction Model:</strong> Transaction divided into sub-transactions. Structure: T { T1, T2, T3 }. Advantages: parallelism, fault isolation.</p>
+            <p><strong>3. Distributed Transaction Model:</strong> Executes across multiple sites, uses Two-Phase Commit (2PC). Example: Bank transfer (debit site A, credit site B).</p>
+            <p><strong>4. Chained Transaction Model:</strong> Series of smaller independent commits, improves recovery.</p>
+            <p><strong>5. Workflow Transaction Model:</strong> Tasks follow business process, used in e-commerce and supply chains.</p>
+            <p><span class="highlight">Conclusion:</span> Transaction models improve concurrency, reliability, and distributed execution.</p>
+        </div></div>
+
+        <!-- 7(b) Flat and Nested Transaction -->
+        <div class="qa-block"><div class="question">7(b) What is Flat and Nested Transaction? Explain with Example (15 Marks)</div><div class="answer">
+            <p><strong>Flat Transaction:</strong> Single execution unit: BEGIN → Execute → COMMIT/ABORT. <em>Example:</em> Update account balance; failure causes full rollback.</p>
+            <p><strong>Nested Transaction:</strong> Main transaction contains sub-transactions (children). <em>Example:</em> Online shopping: Parent = Place order; Children = Payment, Inventory, Delivery.</p>
+            <table><th>Flat</th><th>Nested</th>
+            <tr><td>Single unit</th><th>Multiple sub-units</th></tr>
+            <tr><td>Full rollback</th><th>Partial rollback</th></tr>
+            <tr>。<th>Less parallel</th><th>More parallel</th></tr>
+            </table>
+        </div></div>
+
+        <!-- 7(c) Serializability in Distributed DB -->
+        <div class="qa-block"><div class="question">7(c) Explain Serializability in Distributed Database (15 Marks)</div><div class="answer">
+            <p><strong>Serializability:</strong> Concurrent execution produces same result as some serial execution.</p>
+            <p><strong>Conflict Serializability:</strong> Uses precedence graph; read-write/write-write conflicts must be acyclic.</p>
+            <p><strong>View Serializability:</strong> Schedules appear identical to serial schedule (same initial reads, final writes).</p>
+            <p><strong>Importance:</strong> Prevents inconsistency, maintains correctness, improves concurrency.</p>
+        </div></div>
+
+        <!-- 8(a) Why Commit Protocol Necessary -->
+        <div class="qa-block"><div class="question">8(a) Why is Commit Protocol Necessary? (15 Marks)</div><div class="answer">
+            <p>Ensures all sites commit or abort together → atomicity in distributed transactions.</p>
+            <ul class="sub-list"><li>Atomicity</li><li>Consistency</li><li>Failure handling</li><li>Distributed coordination</li></ul>
+            <p><em>Example:</em> Bank transfer: debit success, credit failure → without protocol data becomes inconsistent.</p>
+            <p>Protocols: Two-Phase Commit (2PC), Three-Phase Commit (3PC).</p>
+        </div></div>
+
+        <!-- 8(b) Response to Failure in 2PC -->
+        <div class="qa-block"><div class="question">8(b) Explain Response to Failure in Two Phase Commit Protocol (15 Marks)</div><div class="answer">
+            <p><strong>Coordinator failure:</strong> Participants wait, recover from log.</p>
+            <p><strong>Participant failure:</strong> Recover from stable storage, use undo/redo.</p>
+            <p><strong>Communication failure:</strong> Timeout mechanism triggers recovery.</p>
+            <div class="code-diagram">Coordinator → Prepare → Vote → Commit/Abort → Recovery: Undo/Redo</div>
+        </div></div>
+
+        <!-- 8(c) Disadvantages of 2PC -->
+        <div class="qa-block"><div class="question">8(c) Disadvantages of Two Phase Commit Protocol (15 Marks)</div><div class="answer">
+            <ul class="sub-list"><li>Blocking problem (participants may wait indefinitely)</li><li>High communication overhead</li><li>Long waiting time</li><li>Coordinator single point of failure</li><li>Performance degradation under high load</li></ul>
+        </div></div>
+
+        <!-- 9(a) Parallel Database Architecture -->
+        <div class="qa-block"><div class="question">9(a) Explain Different Parallel Database Architecture (15 Marks)</div><div class="answer">
+            <p><strong>Shared Memory:</strong> CPUs share memory and disk. Fast communication but limited scalability.</p>
+            <p><strong>Shared Disk:</strong> Each CPU has private memory, shared disk. High availability but disk contention.</p>
+            <p><strong>Shared Nothing:</strong> Each node has CPU+memory+disk. Highly scalable, fault tolerant, complex communication.</p>
+            <tr><th>Architecture</th><th>Scalability</th><th>Fault Tolerance</th></tr>
+            <tr><td>Shared Memory</th><th>Low</th><th>Medium</th></tr>
+            <tr><td>Shared Disk</th><th>Medium</th><th>High</th></tr>
+            <tr><td>Shared Nothing</th><th>High</th><th>Very High</th></tr>
+            </table>
+        </div></div>
+
+        <!-- 9(b) Goal of Parallel Database Architecture -->
+        <div class="qa-block"><div class="question">9(b) Goal of Using Parallel Database Architecture (15 Marks)</div><div class="answer">
+            <p><strong>Goals:</strong> Improve speed, handle large data, load balancing, fault tolerance, high throughput.</p>
+        </div></div>
+
+        <!-- 9(c) Parallel DB vs Distributed DB -->
+        <div class="qa-block"><div class="question">9(c) Difference Between Parallel Database and Distributed Database (15 Marks)</div><div class="answer">
+            </table><th>Parallel DB</th><th>Distributed DB</th></tr>
+            <tr><td>Improve speed</th><th>Share data across locations</th></tr>
+            <tr><td>Tight coupling</th><th>Loose coupling</th></tr>
+            <tr><td>Same physical location</th><th>Multiple locations</th></tr>
+            <tr><td>Central control</th><th>Autonomous sites</th></tr>
+            </table>
+        </div></div>
+
+        <!-- 10(a) Serializability Detailed -->
+        <div class="qa-block"><div class="question">10(a) Serializability in Distributed Database (15 Marks)</div><div class="answer">
+            <p>Ensures concurrent execution = serial execution order. Benefits: consistency, correctness, no lost updates.</p>
+            <p>Techniques: Locking (2PL), Timestamp ordering, Optimistic validation.</p>
+        </div></div>
+
+        <!-- 11(a) Multidatabase Architecture -->
+        <div class="qa-block"><div class="question">11(a) Discuss Multidatabase Architecture (15 Marks)</div><div class="answer">
+            <p>Integrates multiple autonomous databases under global schema.</p>
+            <div class="code-diagram">Users → Global Schema → MDBMS → Local Databases</div>
+            <p><strong>Components:</strong> Global schema, local schema, data translator. <strong>Advantages:</strong> Autonomy, scalability. <strong>Disadvantages:</strong> Complex integration, query optimization overhead.</p>
+        </div></div>
+
+        <!-- 11(b) Mobile Database -->
+        <div class="qa-block"><div class="question">11(b) What is Mobile Database? (15 Marks)</div><div class="answer">
+            <p>Database that supports mobile users with wireless access, replication, and synchronization.</p>
+            <p><strong>Characteristics:</strong> Portability, intermittent connectivity, data caching.</p>
+            <p><strong>Applications:</strong> Banking, healthcare, navigation, e-commerce.</p>
+        </div></div>
+
+        <!-- 11(c) Concurrency Control in Distributed DBMS -->
+        <div class="qa-block"><div class="question">11(c) Concurrency Control in Distributed DBMS (15 Marks)</div><div class="answer">
+            <p><strong>Techniques:</strong></p>
+            <ul class="sub-list"><li>Lock-Based Protocols (Shared/Exclusive locks, 2PL)</li><li>Timestamp Protocol (older transaction gets priority)</li><li>Optimistic Protocol (validate at commit)</li><li>Distributed 2PL (lock acquisition before execution)</li></ul>
+            <p><strong>Benefits:</strong> Consistency, deadlock control, isolation, improved throughput.</p>
+        </div></div>
+    </div>
+
+    <!-- summary -->
+    <div style="margin-top: 2.2rem; background: #eaf5f3; border-radius: 28px; padding: 1.2rem 1.8rem;">
+        <h3 style="color: #1c6e6a; margin-bottom: 0.4rem;">📖 Exam-focused Summary – Distributed Systems</h3>
+        <p>✔ Complete 15-mark answers for MAKAUT PEC-IT601B (2024–25).<br>
+        ✔ Covers transaction models (flat, nested, distributed, chained, workflow), 2PC (need, failure response, disadvantages), parallel architectures (shared memory/disk/nothing), serializability, multidatabase, mobile database, concurrency control.<br>
+        ✔ Answers structured with definitions, examples, tables, and diagrams per MAKAUT exam pattern.</p>
+    </div>
+    <footer>
+        📌 MAKAUT B.Tech (IT/CSE) – Distributed Systems Solved Paper (2024–25) <br>
+        Prepared for semester examination reference & revision.
+    </footer>
+</div>
+</body>
+</html>

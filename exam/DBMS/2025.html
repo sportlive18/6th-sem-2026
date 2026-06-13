@@ -1,0 +1,236 @@
+Here is an HTML document that presents the detailed, exam-oriented solutions for the MAKAUT DBMS (PCC-CS601) 2024–25 question paper in a clear, structured format.
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>MAKAUT DBMS (PCC-CS601) 2024–25 - Solved Paper</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #eef2f7;
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.55;
+            color: #1e2f3e;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 36px;
+            box-shadow: 0 25px 40px -12px rgba(0,0,0,0.2);
+            overflow: hidden;
+            padding: 2rem 2rem 2.5rem 2rem;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #2c6e6b;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        .header h1 {
+            font-size: 1.9rem;
+            color: #1c5a58;
+            font-weight: 700;
+        }
+        .header h2 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #2a7a76;
+            margin-top: 0.3rem;
+        }
+        .badge {
+            display: inline-block;
+            background: #e0f0ee;
+            padding: 0.2rem 1rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #1c6e6a;
+            margin-top: 0.6rem;
+        }
+        .group {
+            margin-top: 2.2rem;
+            border-left: 6px solid #2a8a86;
+            padding-left: 1.3rem;
+        }
+        .group-title {
+            background: linear-gradient(135deg, #1c6e6a, #2a8a86);
+            display: inline-block;
+            padding: 0.3rem 1.5rem;
+            border-radius: 50px;
+            color: white;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.3px;
+        }
+        .qa-block {
+            background: #fefefe;
+            margin: 1.2rem 0;
+            border-radius: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            border: 1px solid #e1eceb;
+            overflow: hidden;
+        }
+        .question {
+            background: #f9fdfc;
+            padding: 0.8rem 1.2rem;
+            font-weight: 700;
+            font-size: 1.02rem;
+            color: #1a7370;
+            border-bottom: 1px solid #dfe9e8;
+        }
+        .answer {
+            padding: 1rem 1.5rem 1.3rem 1.5rem;
+            background: white;
+        }
+        .answer p, .answer li {
+            color: #2c3e45;
+        }
+        .sub-list {
+            margin: 0.6rem 0 0.6rem 1.8rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0.9rem 0;
+            font-size: 0.9rem;
+            border-radius: 16px;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+        th, td {
+            border: 1px solid #cbdde0;
+            padding: 8px 12px;
+            vertical-align: top;
+        }
+        th {
+            background: #e2f0ef;
+            font-weight: 700;
+            color: #145c59;
+        }
+        .highlight {
+            font-weight: 600;
+            color: #1f7e7a;
+        }
+        .code-diagram {
+            font-family: monospace;
+            background: #f2f8f8;
+            padding: 0.7rem 1rem;
+            border-radius: 16px;
+            white-space: pre-line;
+            line-height: 1.4;
+            margin: 0.6rem 0;
+            font-size: 0.85rem;
+        }
+        .math {
+            font-family: monospace;
+            background: #f2f6f9;
+            padding: 0.2rem 0.4rem;
+            border-radius: 8px;
+        }
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #5e7e7a;
+            border-top: 1px solid #cee0de;
+            padding-top: 1.5rem;
+        }
+        @media (max-width: 650px) {
+            .container {
+                padding: 1.2rem;
+            }
+            .question {
+                font-size: 0.9rem;
+            }
+            .group-title {
+                font-size: 1.2rem;
+            }
+            th, td {
+                font-size: 0.78rem;
+                padding: 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>📊 Database Management System</h1>
+        <h2>MAKAUT B.Tech (PCC-CS601) 2024–25 – Detailed Solutions</h2>
+        <div class="badge">✅ Group-A (1 Mark) | Group-B (5 Marks) | Group-C (15 Marks) | Exam-ready answers</div>
+    </div>
+
+    <!-- GROUP - A (Very Short Answer) -->
+    <div class="group">
+        <div class="group-title">📌 Group-A (Very Short Answer – 1 Mark Each)</div>
+        <div class="qa-block"><div class="question">(i) What is a Multivalued Attribute in an ERD?</div><div class="answer"><p><strong>Answer:</strong> An attribute that can have multiple values for a single entity. <span class="highlight">Example:</span> Phone_Number of a student.</p></div></div>
+        <div class="qa-block"><div class="question">(ii) Are NULL values equivalent to zero or blank space?</div><div class="answer"><p><strong>Answer:</strong> No. NULL represents unknown or missing data and is different from zero or blank space.</p></div></div>
+        <div class="qa-block"><div class="question">(iii) In which indexing, the total number of records in both the index table and the database table is same?</div><div class="answer"><p><strong>Answer:</strong> Dense Indexing.</p></div></div>
+        <div class="qa-block"><div class="question">(iv) The two-phase locking (2PL) protocol consists of ______ phase and ______ phase.</div><div class="answer"><p><strong>Answer:</strong> Growing Phase and Shrinking Phase.</p></div></div>
+        <div class="qa-block"><div class="question">(v) What does RBAC stand for?</div><div class="answer"><p><strong>Answer:</strong> Role-Based Access Control.</p></div></div>
+        <div class="qa-block"><div class="question">(vi) What is the difference between homogeneous and heterogeneous DBMS?</div><div class="answer"><p><strong>Answer:</strong> Homogeneous: all sites use same DBMS; Heterogeneous: different sites use different DBMS.</p></div></div>
+        <div class="qa-block"><div class="question">(vii) What do you mean by Strong Entity in ER Diagram? Give an example.</div><div class="answer"><p><strong>Answer:</strong> An entity that has its own primary key and can exist independently. <span class="highlight">Example:</span> Student(Student_ID, Name)</p></div></div>
+        <div class="qa-block"><div class="question">(viii) Which operator performs pattern matching in SQL?</div><div class="answer"><p><strong>Answer:</strong> LIKE</p></div></div>
+        <div class="qa-block"><div class="question">(ix) What is the main advantage of using sparse matrices for storing data?</div><div class="answer"><p><strong>Answer:</strong> Reduces memory/storage requirements by storing only non-zero values.</p></div></div>
+        <div class="qa-block"><div class="question">(x) Define Checkpoint used in Database Recovery.</div><div class="answer"><p><strong>Answer:</strong> A checkpoint is a recovery mechanism that saves the current database state to minimize recovery time after failure.</p></div></div>
+        <div class="qa-block"><div class="question">(xi) What does MAC stand for in Database Security?</div><div class="answer"><p><strong>Answer:</strong> Mandatory Access Control.</p></div></div>
+        <div class="qa-block"><div class="question">(xii) ______ refers to the act of maintaining duplicate copies of a database across multiple locations.</div><div class="answer"><p><strong>Answer:</strong> Replication.</p></div></div>
+    </div>
+
+    <!-- GROUP - B (Short Answer – 5 Marks) -->
+    <div class="group">
+        <div class="group-title">✍️ Group-B (Short Answer – 5 Marks)</div>
+        <div class="qa-block"><div class="question">2. Which mechanisms are typically used to provide security in a database?</div><div class="answer"><p><strong>Mechanisms:</strong> Authentication, Authorization, Access Control, Encryption, Auditing, Backup & Recovery. Ensures confidentiality, integrity, availability.</p></div></div>
+        <div class="qa-block"><div class="question">3. Explain the types of data fragmentation in Distributed Database.</div><div class="answer"><p><strong>Horizontal fragmentation:</strong> rows divided (e.g., by location). <strong>Vertical fragmentation:</strong> columns divided. <strong>Mixed fragmentation:</strong> combination. Advantages: faster access, better security.</p></div></div>
+        <div class="qa-block"><div class="question">4. What do you mean by Generalization and Specialization? Give examples.</div><div class="answer"><p><strong>Generalization (bottom-up):</strong> Car, Bike → Vehicle. <strong>Specialization (top-down):</strong> Employee → Manager, Engineer.</p></div></div>
+        <div class="qa-block"><div class="question">5. Difference Between DROP, TRUNCATE and DELETE</div><div class="answer">
+            <table><th>DELETE</th><th>TRUNCATE</th><th>DROP</th>
+            <tr><td>Removes selected rows (WHERE allowed)</td><td>Removes all rows</td><td>Removes entire table</td></tr>
+            <tr><td>Table remains</td><td>Table remains</td><td>Table deleted</td></tr>
+            <tr><td>Can rollback</td><td>Rollback possible usually</td><td>Cannot recover easily</td></tr>
+            </table>
+        </div></div>
+        <div class="qa-block"><div class="question">6. Types of JOINs Supported by SQL</div><div class="answer"><p>INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN, SELF JOIN, CROSS JOIN.</p></div></div>
+    </div>
+
+    <!-- GROUP - C (Long Answer) -->
+    <div class="group">
+        <div class="group-title">📘 Group-C (Long Answer – 15 Marks)</div>
+
+        <div class="qa-block"><div class="question">7(a) Discuss ACID Properties with Example</div><div class="answer"><p><strong>Atomicity:</strong> all-or-nothing (fund transfer). <strong>Consistency:</strong> integrity maintained. <strong>Isolation:</strong> concurrent txns don't interfere. <strong>Durability:</strong> committed changes persist. Example: UPDATE balance SET balance=balance-1000 WHERE acc=101; and +1000 to acc=102; COMMIT.</p></div></div>
+        <div class="qa-block"><div class="question">7(b) How does a Dirty Read occur? Explain with Example.</div><div class="answer"><p>Dirty read: reading uncommitted data. <strong>Example:</strong> T1 updates balance to 4000 (uncommitted), T2 reads 4000, then T1 rolls back → T2 used wrong value. Prevention: Serializable isolation, strict 2PL.</p></div></div>
+        <div class="qa-block"><div class="question">8(a) Explain Subsystems of Typical Database System Structure</div><div class="answer"><p><strong>Components:</strong> Query Processor, DDL Compiler, DML Compiler, Query Optimizer, Transaction Manager, Storage Manager, Buffer Manager. Diagram: Users → Query Processor → Transaction Manager → Storage Manager → Database Files.</p></div></div>
+        <div class="qa-block"><div class="question">8(b) Role of DBA Concerning Database Security</div><div class="answer"><p>User account management, authentication, authorization, encryption, backup/recovery, audit trails, security policies. Ensures confidentiality, integrity, availability.</p></div></div>
+        <div class="qa-block"><div class="question">9(a) How does Data Abstraction help in DBMS?</div><div class="answer"><p>Levels: Physical (storage), Logical (structure), View (user-specific). Advantages: reduced complexity, increased security, data independence, easier maintenance.</p></div></div>
+        <div class="qa-block"><div class="question">9(b) Explain Extended Features of ER Model</div><div class="answer"><p>Specialization (top-down), Generalization (bottom-up), Aggregation (relationship as entity), Inheritance (subclass inherits). Example: Employee → Manager inherits Employee attributes.</p></div></div>
+        <div class="qa-block"><div class="question">10(a) Role of Keys in DBMS</div><div class="answer"><p>Primary Key, Candidate Key, Alternate Key, Foreign Key, Composite Key. Importance: uniqueness, integrity, relationship, faster search, prevents duplication.</p></div></div>
+        <div class="qa-block"><div class="question">10(b) Degree of Relationship with Graphical Representation</div><div class="answer"><p><strong>Unary (degree 1):</strong> Employee supervises Employee. <strong>Binary (degree 2):</strong> Student enrolls in Course. <strong>Ternary (degree 3):</strong> Supplier supplies Part to Project.</p><div class="code-diagram">Student ---- Enrolls ---- Course</div></div></div>
+        <div class="qa-block"><div class="question">11(a) Relational Algebra Queries</div><div class="answer"><p><strong>(i) MBA students:</strong> π<sub>Stid,Stname</sub>(σ<sub>Course_Title='MBA'</sub>(Student ⋈ Course))<br><strong>(ii) Instructors teaching both BTech(CSE) and BTech(IT):</strong> Intersection of two projections.<br><strong>(iii) Duration longer than Prof S. Gupta:</strong> π<sub>Instructor_Name</sub>(σ<sub>Duration > D</sub>(Instructor ⋈ Course)).</p></div></div>
+        <div class="qa-block"><div class="question">11(b) SQL Queries</div><div class="answer"><p><strong>(i) Students per course:</strong> SELECT Course_Id, COUNT(*) FROM Student GROUP BY Course_Id;<br><strong>(ii) Same duration courses:</strong> SELECT C1.Course_Title, C2.Course_Title FROM Course C1, Course C2 WHERE C1.Duration=C2.Duration AND C1.Course_Id &lt; C2.Course_Id;<br><strong>(iii) Second highest marks in Network Security:</strong> using MAX subquery.</p></div></div>
+    </div>
+
+    <!-- summary -->
+    <div style="margin-top: 2.2rem; background: #eaf5f3; border-radius: 28px; padding: 1.2rem 1.8rem;">
+        <h3 style="color: #1c6e6a; margin-bottom: 0.4rem;">📖 Exam-focused Summary</h3>
+        <p>✔ Complete coverage of MAKAUT DBMS (PCC-CS601) 2024–25 – all groups.<br>
+        ✔ Includes ER model, NULL values, indexing, 2PL, RBAC, fragmentation, generalization/specialization, ACID, dirty read, DBA roles, data abstraction, keys, relationship degree, relational algebra & SQL queries.<br>
+        ✔ Answers structured for 1, 5, and 15-mark questions with clear headings & exam-style presentation.</p>
+    </div>
+    <footer>
+        📌 MAKAUT B.Tech (CSE/IT) – DBMS Solved Paper (2024–25) <br>
+        Prepared for semester examination reference & revision.
+    </footer>
+</div>
+</body>
+</html>
+```

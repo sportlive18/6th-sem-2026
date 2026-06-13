@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>MAKAUT Computer Networks (ECC602/PCC-CS602) 2024–25 - Solved Paper</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #eef2f7;
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.55;
+            color: #1e2f3e;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 36px;
+            box-shadow: 0 25px 40px -12px rgba(0,0,0,0.2);
+            overflow: hidden;
+            padding: 2rem 2rem 2.5rem 2rem;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #1f6e7c;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        .header h1 {
+            font-size: 1.9rem;
+            color: #155e6b;
+            font-weight: 700;
+        }
+        .header h2 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #1f7a8c;
+            margin-top: 0.3rem;
+        }
+        .badge {
+            display: inline-block;
+            background: #e0f0f3;
+            padding: 0.2rem 1rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #166b7a;
+            margin-top: 0.6rem;
+        }
+        .group {
+            margin-top: 2.2rem;
+            border-left: 6px solid #208a9c;
+            padding-left: 1.3rem;
+        }
+        .group-title {
+            background: linear-gradient(135deg, #166b7a, #208a9c);
+            display: inline-block;
+            padding: 0.3rem 1.5rem;
+            border-radius: 50px;
+            color: white;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.3px;
+        }
+        .qa-block {
+            background: #fefefe;
+            margin: 1.2rem 0;
+            border-radius: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            border: 1px solid #e1ecef;
+            overflow: hidden;
+        }
+        .question {
+            background: #f9fdfe;
+            padding: 0.8rem 1.2rem;
+            font-weight: 700;
+            font-size: 1.02rem;
+            color: #1a707e;
+            border-bottom: 1px solid #dfe9ef;
+        }
+        .answer {
+            padding: 1rem 1.5rem 1.3rem 1.5rem;
+            background: white;
+        }
+        .answer p, .answer li {
+            color: #2c3e45;
+        }
+        .sub-list {
+            margin: 0.6rem 0 0.6rem 1.8rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0.9rem 0;
+            font-size: 0.9rem;
+            border-radius: 16px;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+        th, td {
+            border: 1px solid #cbdde6;
+            padding: 8px 12px;
+            vertical-align: top;
+        }
+        th {
+            background: #e2f0f3;
+            font-weight: 700;
+            color: #145c6b;
+        }
+        .highlight {
+            font-weight: 600;
+            color: #1a7a8a;
+        }
+        .code-diagram {
+            font-family: monospace;
+            background: #f2f8fc;
+            padding: 0.7rem 1rem;
+            border-radius: 16px;
+            white-space: pre-line;
+            line-height: 1.4;
+            margin: 0.6rem 0;
+            font-size: 0.85rem;
+        }
+        hr {
+            margin: 0.8rem 0;
+            border: none;
+            height: 1px;
+            background: #d4e2e8;
+        }
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #5e827a;
+            border-top: 1px solid #cee0e0;
+            padding-top: 1.5rem;
+        }
+        @media (max-width: 650px) {
+            .container {
+                padding: 1.2rem;
+            }
+            .question {
+                font-size: 0.9rem;
+            }
+            .group-title {
+                font-size: 1.2rem;
+            }
+            th, td {
+                font-size: 0.78rem;
+                padding: 6px;
+            }
+        }
+        .math {
+            font-family: monospace;
+            background: #f2f6f9;
+            padding: 0.2rem 0.4rem;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>🌐 Computer Networks</h1>
+        <h2>MAKAUT B.Tech (ECC602 / PCC-CS602) 2024–25 – Detailed Solutions</h2>
+        <div class="badge">✅ Group-A (1 Mark) | Group-B (5 Marks) | Group-C (15 Marks) | Exam-ready answers</div>
+    </div>
+
+    <!-- GROUP - A (Very Short Answer) -->
+    <div class="group">
+        <div class="group-title">📌 Group-A (Very Short Answer – 1 Mark Each)</div>
+        <div class="qa-block"><div class="question">(i) Define Data Rate in terms of transmission.</div><div class="answer"><p><strong>Answer:</strong> Data rate is the number of bits transmitted per second (bps) over a communication channel.</p></div></div>
+        <div class="qa-block"><div class="question">(ii) Name one intradomain routing algorithm.</div><div class="answer"><p><strong>Answer:</strong> OSPF (Open Shortest Path First) [Also acceptable: RIP, IS-IS]</p></div></div>
+        <div class="qa-block"><div class="question">(iii) Which transport layer protocol is used for SMTP?</div><div class="answer"><p><strong>Answer:</strong> TCP</p></div></div>
+        <div class="qa-block"><div class="question">(iv) Write one advantage of VPN.</div><div class="answer"><p><strong>Answer:</strong> Provides secure communication over a public network through encryption.</p></div></div>
+        <div class="qa-block"><div class="question">(v) If there are n nodes in a network, how many physical links are required in Mesh Topology?</div><div class="answer"><p><strong>Answer:</strong> <span class="math">n(n-1)/2</span></p></div></div>
+        <div class="qa-block"><div class="question">(vi) What is the maximum efficiency achievable in Pure ALOHA?</div><div class="answer"><p><strong>Answer:</strong> 18.4% or <span class="math">1/(2e)</span></p></div></div>
+        <div class="qa-block"><div class="question">(vii) What is the purpose of Class D address?</div><div class="answer"><p><strong>Answer:</strong> Multicasting.</p></div></div>
+        <div class="qa-block"><div class="question">(viii) The technique of temporarily delaying outgoing acknowledgements so that they can be hooked onto the next outgoing data frame is called ________.</div><div class="answer"><p><strong>Answer:</strong> Piggybacking</p></div></div>
+        <div class="qa-block"><div class="question">(ix) What is DNS?</div><div class="answer"><p><strong>Answer:</strong> DNS (Domain Name System) translates domain names into IP addresses.</p></div></div>
+        <div class="qa-block"><div class="question">(x) Which technique is used to detect and correct single-bit error?</div><div class="answer"><p><strong>Answer:</strong> Hamming Code</p></div></div>
+        <div class="qa-block"><div class="question">(xi) Which protocol is used to get the MAC address given an IP address?</div><div class="answer"><p><strong>Answer:</strong> ARP (Address Resolution Protocol)</p></div></div>
+        <div class="qa-block"><div class="question">(xii) Which layer is responsible for Host-to-Host delivery?</div><div class="answer"><p><strong>Answer:</strong> Transport Layer</p></div></div>
+    </div>
+
+    <!-- GROUP - B (Short Answer – 5 Marks) -->
+    <div class="group">
+        <div class="group-title">✍️ Group-B (Short Answer – 5 Marks)</div>
+        <div class="qa-block"><div class="question">2. Compare and Contrast Circuit Switching and Packet Switching</div><div class="answer">
+            <table>
+                <tr><th>Circuit Switching</th><th>Packet Switching</th></tr>
+                <tr><td>Dedicated path established</td><td>No dedicated path</td></tr>
+                <tr><td>Resources reserved</td><td>Resources shared</td></tr>
+                <tr><td>Fixed delay</td><td>Variable delay</td></tr>
+                <tr><td>Suitable for voice calls</td><td>Suitable for data communication</td></tr>
+                <tr><td>Example: Telephone network</td><td>Example: Internet</td></tr>
+            </table>
+            <p><span class="highlight">Circuit Switching advantages:</span> guaranteed bandwidth, predictable delay. <span class="highlight">Packet Switching advantages:</span> better bandwidth utilization, more efficient.</p>
+        </div></div>
+
+        <div class="qa-block"><div class="question">3. Discuss Mesh Topology with Diagram</div><div class="answer"><p><strong>Definition:</strong> Every node directly connected to every other node. Number of links = n(n-1)/2. <strong>Advantages:</strong> highly reliable, no congestion, easy fault isolation, high security. <strong>Disadvantages:</strong> expensive, complex wiring. <strong>Applications:</strong> military, WAN backbone.</p><div class="code-diagram">A — B — C<br>| \ | / |<br>D — E — F</div></div></div>
+
+        <div class="qa-block"><div class="question">4. Advantage of Independent ACK and Cumulative ACK. Go-Back-N when Sender Window = Receiver Window = 1</div><div class="answer"><p><strong>Independent ACK:</strong> each frame acknowledged separately → precise error detection. <strong>Cumulative ACK:</strong> one ACK confirms multiple frames → reduces overhead. When both windows =1, <span class="highlight">Go-Back-N behaves like Stop-and-Wait ARQ.</span></p></div></div>
+
+        <div class="qa-block"><div class="question">5. Explain CRC with Example</div><div class="answer"><p><strong>CRC (Cyclic Redundancy Check):</strong> binary division, remainder appended. <strong>Example:</strong> Data=1101011011, generator=10011 → append 4 zeros, divide → remainder=1110 → transmitted frame: 1101011011 1110. Detects burst errors, highly reliable.</p></div></div>
+
+        <div class="qa-block"><div class="question">6. What are the two possible transport services? What is meant by segment? What is congestion?</div><div class="answer"><p><strong>Transport services:</strong> Connection-oriented (TCP: reliable, ordered) and Connectionless (UDP: fast, no guarantee). <strong>Segment:</strong> PDU of Transport Layer. <strong>Congestion:</strong> network traffic exceeds resources → delay & packet loss.</p></div></div>
+    </div>
+
+    <!-- GROUP - C (Long Answer) -->
+    <div class="group">
+        <div class="group-title">📘 Group-C (Long Answer – 15 Marks)</div>
+
+        <div class="qa-block"><div class="question">7(a) Explain Bit Stuffing Method with Example</div><div class="answer"><p><strong>Bit stuffing:</strong> after five consecutive 1s, a 0 is inserted. Flag pattern: 01111110. <strong>Example:</strong> 1111101111110 → after stuffing: 1111100 11111010. Receiver removes stuffed bits. Prevents false flag detection, used in HDLC, PPP.</p></div></div>
+
+        <div class="qa-block"><div class="question">7(b) Data = 1110011011, Received Code = 1100011011. Correct Using Hamming Code</div><div class="answer"><p><strong>Comparison:</strong> transmitted: 1110011011, received: 1100011011 → bit position 3 differs. <strong>Error position:</strong> 3rd bit. Corrected code = 1110011011. Single-bit error detected & corrected via Hamming code.</p></div></div>
+
+        <div class="qa-block"><div class="question">7(c) Functionalities of MAC Sublayer</div><div class="answer"><p>Physical addressing (MAC), frame delimiting, access control (CSMA/CD, CSMA/CA), error detection (CRC), collision handling, media access management. Ensures efficient shared medium access.</p></div></div>
+
+        <div class="qa-block"><div class="question">8(a) Explain Distance Vector Routing with Example</div><div class="answer"><p>Based on Bellman-Ford; routers exchange tables with neighbors. <strong>Example:</strong> A–1–B–2–C, A–4–C. Path A→B→C cost=3 (best). <strong>Advantages:</strong> simple, low complexity. <strong>Disadvantages:</strong> slow convergence, count-to-infinity.</p></div></div>
+
+        <div class="qa-block"><div class="question">8(b) Count-to-Infinity Problem and Its Solution</div><div class="answer"><p>Routers continuously increase hop count for failed route (2→3→4...). <strong>Solutions:</strong> Split Horizon, Poison Reverse, Triggered Updates, Hold-down Timer, Maximum Hop Count.</p></div></div>
+
+        <div class="qa-block"><div class="question">9(a) Functions of Transport Layer</div><div class="answer"><p>Process-to-process delivery, segmentation & reassembly, flow control, error control, multiplexing, connection management, congestion control. Ensures reliable end-to-end communication.</p></div></div>
+
+        <div class="qa-block"><div class="question">9(b) Explain Leaky Bucket Algorithm</div><div class="answer"><p>Traffic shaping: packets stored in bucket, leaks at constant rate. Excess packets discarded. Smooth traffic, reduces congestion, simple but does not support bursts.</p><div class="code-diagram">Incoming → Bucket → Constant rate output</div></div></div>
+
+        <div class="qa-block"><div class="question">9(c) Open Loop Congestion Control Techniques</div><div class="answer"><p>Preventive: Retransmission policy, Window policy, Acknowledgement policy, Discard policy, Admission policy. Prevents congestion before occurrence, improves QoS.</p></div></div>
+
+        <div class="qa-block"><div class="question">10. Short Notes: (i) DNS (ii) FTP (iii) Firewall (iv) TELNET</div><div class="answer"><p><strong>DNS:</strong> domain → IP translation, distributed hierarchical database. <strong>FTP:</strong> file transfer, ports 20 (data) & 21 (control). <strong>Firewall:</strong> monitors/filters traffic; packet filtering, stateful, proxy. <strong>TELNET:</strong> remote login (port 23), insecure plain text.</p></div></div>
+
+        <div class="qa-block"><div class="question">11(a) ISP Address Allocation Problem (8 Marks) – 190.100.0.0/16</div><div class="answer"><p><strong>Total addresses:</strong> 65536. <strong>Group1 (64×256):</strong> 16384 addresses → 190.100.0.0 – 190.100.63.255. <strong>Group2 (128×128):</strong> 16384 → 190.100.64.0 – 190.100.127.255. <strong>Group3 (128×64):</strong> 8192 → 190.100.128.0 – 190.100.159.255. <strong>Remaining:</strong> 65536 – (16384+16384+8192) = <span class="highlight">24576 addresses</span>.</p></div></div>
+
+        <div class="qa-block"><div class="question">11(b) CIDR Routing Decision – Destination 131.23.151.76</div><div class="answer"><p><strong>Longest prefix match:</strong> 131.23.151.76 falls under 131.22.0.0/15 (covers 131.22.0.0 – 131.23.255.255) → <span class="highlight">Interface = 1</span>.</p></div></div>
+
+        <div class="qa-block"><div class="question">11(c) What are Subnetting and Supernetting?</div><div class="answer"><p><strong>Subnetting:</strong> dividing large network into smaller subnetworks → better management, reduced broadcast. <strong>Supernetting:</strong> combining multiple networks into one → reduces routing table size, efficient aggregation.</p></div></div>
+    </div>
+
+    <!-- summary -->
+    <div style="margin-top: 2.2rem; background: #eaf3f6; border-radius: 28px; padding: 1.2rem 1.8rem;">
+        <h3 style="color: #166b7a; margin-bottom: 0.4rem;">📖 Exam-focused Summary</h3>
+        <p>✔ Complete coverage of MAKAUT Computer Networks (ECC602/PCC-CS602) 2024–25 – all groups.<br>
+        ✔ Includes data rate, intradomain routing, VPN, mesh topology, CRC, bit stuffing, Hamming code, distance vector, count-to-infinity, leaky bucket, open loop control, DNS, FTP, firewall, CIDR, subnetting, supernetting, and ISP allocation.<br>
+        ✔ Answers structured for 1, 5, and 15-mark questions with clear headings & exam-style presentation.</p>
+    </div>
+    <footer>
+        📌 MAKAUT B.Tech (CSE/IT/ECE) – Computer Networks Solved Paper (2024–25) <br>
+        Prepared for semester examination reference & revision.
+    </footer>
+</div>
+</body>
+</html>

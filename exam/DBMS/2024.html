@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>MAKAUT DBMS (PCC-CS601) 2023–24 - Solved Paper</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #f0f4f8;
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.55;
+            color: #1a2f3a;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 36px;
+            box-shadow: 0 25px 40px -12px rgba(0,0,0,0.18);
+            overflow: hidden;
+            padding: 2rem 2rem 2.5rem 2rem;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #2c6e6b;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        .header h1 {
+            font-size: 1.9rem;
+            color: #1c5a58;
+            font-weight: 700;
+        }
+        .header h2 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #2a7a76;
+            margin-top: 0.3rem;
+        }
+        .badge {
+            display: inline-block;
+            background: #e0f0ee;
+            padding: 0.2rem 1rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #1c6e6a;
+            margin-top: 0.6rem;
+        }
+        .group {
+            margin-top: 2.2rem;
+            border-left: 6px solid #2a8a86;
+            padding-left: 1.3rem;
+        }
+        .group-title {
+            background: linear-gradient(135deg, #1c6e6a, #2a8a86);
+            display: inline-block;
+            padding: 0.3rem 1.5rem;
+            border-radius: 50px;
+            color: white;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.3px;
+        }
+        .qa-block {
+            background: #fefefe;
+            margin: 1.2rem 0;
+            border-radius: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            border: 1px solid #e1eceb;
+            overflow: hidden;
+        }
+        .question {
+            background: #f9fdfc;
+            padding: 0.8rem 1.2rem;
+            font-weight: 700;
+            font-size: 1.02rem;
+            color: #1a7370;
+            border-bottom: 1px solid #dfe9e8;
+        }
+        .answer {
+            padding: 1rem 1.5rem 1.3rem 1.5rem;
+            background: white;
+        }
+        .answer p, .answer li {
+            color: #2c3e45;
+        }
+        .sub-list {
+            margin: 0.6rem 0 0.6rem 1.8rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0.9rem 0;
+            font-size: 0.9rem;
+            border-radius: 16px;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+        th, td {
+            border: 1px solid #cbdde0;
+            padding: 8px 12px;
+            vertical-align: top;
+        }
+        th {
+            background: #e2f0ef;
+            font-weight: 700;
+            color: #145c59;
+        }
+        .highlight {
+            font-weight: 600;
+            color: #1f7e7a;
+        }
+        .code-diagram {
+            font-family: monospace;
+            background: #f2f8f8;
+            padding: 0.7rem 1rem;
+            border-radius: 16px;
+            white-space: pre-line;
+            line-height: 1.4;
+            margin: 0.6rem 0;
+            font-size: 0.85rem;
+        }
+        .math {
+            font-family: monospace;
+            background: #f2f6f9;
+            padding: 0.2rem 0.4rem;
+            border-radius: 8px;
+        }
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #5e7e7a;
+            border-top: 1px solid #cee0de;
+            padding-top: 1.5rem;
+        }
+        @media (max-width: 650px) {
+            .container {
+                padding: 1.2rem;
+            }
+            .question {
+                font-size: 0.9rem;
+            }
+            .group-title {
+                font-size: 1.2rem;
+            }
+            th, td {
+                font-size: 0.78rem;
+                padding: 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>📊 Database Management System</h1>
+        <h2>MAKAUT B.Tech (PCC-CS601) 2023–24 – Detailed Solutions</h2>
+        <div class="badge">✅ Group-A (1 Mark) | Group-B (5 Marks) | Group-C (15 Marks) | Exam-ready answers</div>
+    </div>
+
+    <!-- GROUP - A (Very Short Answer) -->
+    <div class="group">
+        <div class="group-title">📌 Group-A (Very Short Answer – 1 Mark Each)</div>
+        <div class="qa-block"><div class="question">(i) Rectangle in ER diagram represents</div><div class="answer"><p><strong>Answer:</strong> Entity Set</p></div></div>
+        <div class="qa-block"><div class="question">(ii) Which is not a fundamental operation in relational algebra?</div><div class="answer"><p><strong>Answer:</strong> Natural Join</p></div></div>
+        <div class="qa-block"><div class="question">(iii) Top-to-bottom relationship among items is</div><div class="answer"><p><strong>Answer:</strong> Hierarchical Schema</p></div></div>
+        <div class="qa-block"><div class="question">(iv) Which is not an example of DBMS?</div><div class="answer"><p><strong>Answer:</strong> Google</p></div></div>
+        <div class="qa-block"><div class="question">(v) SQL Injection is a</div><div class="answer"><p><strong>Answer:</strong> Code Penetration Technique</p></div></div>
+        <div class="qa-block"><div class="question">(vi) What is Granularity?</div><div class="answer"><p><strong>Answer:</strong> The size of a data item (unit of locking).</p></div></div>
+        <div class="qa-block"><div class="question">(vii) Subset of SQL commands used to manipulate data</div><div class="answer"><p><strong>Answer:</strong> Data Manipulation Language (DML)</p></div></div>
+        <div class="qa-block"><div class="question">(viii) A data dictionary does not provide information about</div><div class="answer"><p><strong>Answer:</strong> How data is used</p></div></div>
+        <div class="qa-block"><div class="question">(ix) Weak entity should be associated with</div><div class="answer"><p><strong>Answer:</strong> Strong Entity Set</p></div></div>
+        <div class="qa-block"><div class="question">(x) Full form of TCL</div><div class="answer"><p><strong>Answer:</strong> Transaction Control Language</p></div></div>
+        <div class="qa-block"><div class="question">(xi) SQL Injection attack can</div><div class="answer"><p><strong>Answer:</strong> All of the above</p></div></div>
+        <div class="qa-block"><div class="question">(xii) Integrity constraint in the given statement</div><div class="answer"><p><strong>Answer:</strong> Referential Integrity Constraint</p></div></div>
+    </div>
+
+    <!-- GROUP - B (Short Answer – 5 Marks) -->
+    <div class="group">
+        <div class="group-title">✍️ Group-B (Short Answer – 5 Marks)</div>
+        <div class="qa-block"><div class="question">1. Discuss ACID Properties of Transaction</div><div class="answer"><p><strong>Atomicity:</strong> all-or-nothing; <strong>Consistency:</strong> valid state; <strong>Isolation:</strong> concurrent txns don't interfere; <strong>Durability:</strong> committed changes persist. <span class="highlight">Example:</span> Bank transfer: debit & credit both occur or none.</p></div></div>
+        <div class="qa-block"><div class="question">2. Distinguish Between Locking and Timestamp Protocols</div><div class="answer">
+            <table><th>Locking Protocol</th><th>Timestamp Protocol</th>
+            <tr><td>Uses locks, may cause deadlock</th><th>Uses timestamps, deadlock free</th></tr>
+            <tr><td>Transactions wait</th><th>Transactions abort/restart</th></tr>
+            <tr><td>Example: 2PL</th><th>Example: Timestamp Ordering</th></tr>
+            </table>
+        </div></div>
+        <div class="qa-block"><div class="question">3. What is Heuristic Based Optimization?</div><div class="answer"><p>Rule-based optimization: early selection/projection, replace Cartesian product with join, reduce intermediate results → faster execution, lower memory.</p></div></div>
+        <div class="qa-block"><div class="question">4. What is Data Abstraction? Discuss DBA Role</div><div class="answer"><p><strong>Abstraction levels:</strong> Physical, Logical, View. <strong>DBA:</strong> user management, security, backup/recovery, performance tuning, schema management, authorization.</p></div></div>
+        <div class="qa-block"><div class="question">5. Discuss Different Anomalies with Examples</div><div class="answer"><p><strong>Insertion anomaly:</strong> can't insert without related data. <strong>Deletion anomaly:</strong> removing one deletes useful info. <strong>Update anomaly:</strong> inconsistency due to duplication.</p></div></div>
+    </div>
+
+    <!-- GROUP - C (Long Answer) -->
+    <div class="group">
+        <div class="group-title">📘 Group-C (Long Answer – 15 Marks)</div>
+
+        <div class="qa-block"><div class="question">7(a) ER Diagram Problem – Supplier–Item System (M:N relationship)</div><div class="answer"><p><strong>Entities:</strong> Supplier (Sup_ID PK, Name, Address), Item (Item_Type PK, Description). <strong>Relationship Supplies</strong> with attributes: Quantity, Price. <strong>Cardinality:</strong> M:N.</p><div class="code-diagram">Supplier (Sup_ID, Name, Address) ---- Supplies (Qty, Price) ---- Item (Item_Type, Description)</div></div></div>
+        <div class="qa-block"><div class="question">7(b) B-Tree Construction (Order 3) on keys: 10,20,30,12,15,35,18,38,8,50</div><div class="answer"><p><strong>Final B-Tree:</strong> Root [20]; left child [10,15]; right child [35]; leaves: [8],[12],[18],[30],[38,50].</p></div></div>
+        <div class="qa-block"><div class="question">8(a) Explain ACID Properties (with diagram/example)</div><div class="answer"><p>Atomicity, Consistency, Isolation, Durability. Example: money transfer ensures both debit/credit or none; after commit, data persists.</p></div></div>
+        <div class="qa-block"><div class="question">8(b) Wait-Die and Wound-Wait Protocols</div><div class="answer"><p><strong>Wait-Die:</strong> older waits, younger dies. <strong>Wound-Wait:</strong> older wounds (aborts) younger. Both prevent deadlock in concurrency control.</p></div></div>
+        <div class="qa-block"><div class="question">8(c) B+ Tree with Example</div><div class="answer"><p>Data only in leaves, internal nodes contain search keys, leaves linked. <span class="highlight">Example:</span> root [20|40] → leaves [10],[30],[50]. Advantages: fast search, efficient range queries.</p></div></div>
+        <div class="qa-block"><div class="question">9(a) Why Query Optimization is Needed? Heuristic Optimization</div><div class="answer"><p>Reduces time, disk access, memory. Steps: parsing → translation → optimization → plan generation → execution. Heuristic uses rules (e.g., early selection).</p></div></div>
+        <div class="qa-block"><div class="question">9(b) Granularity of Locking</div><div class="answer"><p>Levels: Database, Table, Page, Record, Field. Fine granularity → better concurrency, coarser → less overhead.</p></div></div>
+        <div class="qa-block"><div class="question">9(c) Deadlock Avoidance in Concurrency</div><div class="answer"><p>Methods: Wait-Die, Wound-Wait, Timeout, Resource Ordering. Prevents circular wait, improves concurrency.</p></div></div>
+        <div class="qa-block"><div class="question">10. Short Notes: 5NF, View, Trigger, Recovery, Concurrency Problems, 2PL, Cursor</div><div class="answer"><p><strong>5NF:</strong> eliminates join dependency. <strong>View:</strong> virtual table. <strong>Trigger:</strong> automatic procedure on event. <strong>Recovery:</strong> restores via logs/checkpoints. <strong>Problems:</strong> lost update, dirty read, unrepeatable read, phantom. <strong>2PL:</strong> growing + shrinking phases → serializability. <strong>Cursor:</strong> row-by-row processing.</p></div></div>
+        <div class="qa-block"><div class="question">11(a) Two-Phase Locking Solution (A=5000, B=3000)</div><div class="answer"><p>T1: Lock-X(A), Read(A), A=A-500, Write(A), Lock-X(B), Read(B), B=B+500, Write(B), Unlock(A), Unlock(B), Commit. T2: Lock-S(A), Read(A), Lock-S(B), Read(B), Display, Unlock(A), Unlock(B). Follows 2PL (all locks before release).</p></div></div>
+        <div class="qa-block"><div class="question">11(b) DAC and MAC</div><div class="answer">
+            <table><th>DAC (Discretionary)</th><th>MAC (Mandatory)</th>
+            <tr><td>Owner controlled, GRANT/REVOKE</th><th>System controlled by security levels</th></tr>
+            <tr><td>Flexible, less secure</th><th>Strict, more secure (military)</th></tr>
+            </table>
+        </div></div>
+    </div>
+
+    <!-- summary -->
+    <div style="margin-top: 2.2rem; background: #eaf5f3; border-radius: 28px; padding: 1.2rem 1.8rem;">
+        <h3 style="color: #1c6e6a; margin-bottom: 0.4rem;">📖 Exam-focused Summary</h3>
+        <p>✔ Complete coverage of MAKAUT DBMS (PCC-CS601) 2023–24 – all groups.<br>
+        ✔ Includes ER diagram, relational algebra, hierarchical schema, SQL injection, granularity, DML, ACID, locking vs timestamp, heuristics, data abstraction, anomalies, B-Tree/B+Tree, Wait-Die/Wound-Wait, query optimization, 2PL, DAC/MAC, and short notes.<br>
+        ✔ Answers structured for 1, 5, and 15-mark questions with clear headings & exam-style presentation.</p>
+    </div>
+    <footer>
+        📌 MAKAUT B.Tech (CSE/IT) – DBMS Solved Paper (2023–24) <br>
+        Prepared for semester examination reference & revision.
+    </footer>
+</div>
+</body>
+</html>

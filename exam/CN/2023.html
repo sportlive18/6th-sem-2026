@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>MAKAUT Computer Networks (ECC602/PCC-CS602) 2022-23 - Solved Paper</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #ecf3f8;
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.55;
+            color: #1e2f3e;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 36px;
+            box-shadow: 0 25px 40px -12px rgba(0,0,0,0.2);
+            overflow: hidden;
+            padding: 2rem 2rem 2.5rem 2rem;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #1a6d7c;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        .header h1 {
+            font-size: 1.9rem;
+            color: #1b5e6e;
+            font-weight: 700;
+        }
+        .header h2 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #287c8f;
+            margin-top: 0.3rem;
+        }
+        .badge {
+            display: inline-block;
+            background: #e0f0f3;
+            padding: 0.2rem 1rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #1b6a7a;
+            margin-top: 0.6rem;
+        }
+        .group {
+            margin-top: 2.2rem;
+            border-left: 6px solid #1f8a9c;
+            padding-left: 1.3rem;
+        }
+        .group-title {
+            background: linear-gradient(135deg, #166b7a, #1f8a9c);
+            display: inline-block;
+            padding: 0.3rem 1.5rem;
+            border-radius: 50px;
+            color: white;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.3px;
+        }
+        .qa-block {
+            background: #fefefe;
+            margin: 1.2rem 0;
+            border-radius: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            border: 1px solid #e1ecef;
+            overflow: hidden;
+        }
+        .question {
+            background: #f9fdfe;
+            padding: 0.8rem 1.2rem;
+            font-weight: 700;
+            font-size: 1.02rem;
+            color: #1d6e7c;
+            border-bottom: 1px solid #dfe9ef;
+        }
+        .answer {
+            padding: 1rem 1.5rem 1.3rem 1.5rem;
+            background: white;
+        }
+        .answer p, .answer li {
+            color: #2c3e45;
+        }
+        .sub-list {
+            margin: 0.6rem 0 0.6rem 1.8rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0.9rem 0;
+            font-size: 0.9rem;
+            border-radius: 16px;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+        th, td {
+            border: 1px solid #cbdde6;
+            padding: 8px 12px;
+            vertical-align: top;
+        }
+        th {
+            background: #e2f0f3;
+            font-weight: 700;
+            color: #145c6b;
+        }
+        .example-box {
+            background: #eaf6f9;
+            padding: 0.6rem 1rem;
+            border-radius: 18px;
+            margin: 0.8rem 0;
+            border-left: 4px solid #1f8a9c;
+        }
+        .highlight {
+            font-weight: 600;
+            color: #1a7a8a;
+        }
+        .code-diagram {
+            font-family: monospace;
+            background: #f2f8fc;
+            padding: 0.7rem 1rem;
+            border-radius: 16px;
+            white-space: pre-line;
+            line-height: 1.4;
+            margin: 0.6rem 0;
+            font-size: 0.85rem;
+        }
+        hr {
+            margin: 0.8rem 0;
+            border: none;
+            height: 1px;
+            background: #d4e2e8;
+        }
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #5e827a;
+            border-top: 1px solid #cee0e0;
+            padding-top: 1.5rem;
+        }
+        @media (max-width: 650px) {
+            .container {
+                padding: 1.2rem;
+            }
+            .question {
+                font-size: 0.9rem;
+            }
+            .group-title {
+                font-size: 1.2rem;
+            }
+            th, td {
+                font-size: 0.78rem;
+                padding: 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>🌐 Computer Networks</h1>
+        <h2>MAKAUT B.Tech (ECC602 / PCC-CS602) 2022–23 – Solved Question Paper</h2>
+        <div class="badge">✅ Group-A (1 Mark) | Group-B (5 Marks) | Group-C (15 Marks) | Exam-ready answers</div>
+    </div>
+
+    <!-- GROUP - A (Very Short Answer) -->
+    <div class="group">
+        <div class="group-title">📌 Group-A (Very Short Answer – 1 Mark Each)</div>
+
+        <div class="qa-block"><div class="question">1(i) Remote login protocol is known as ________</div><div class="answer"><p><strong>Answer:</strong> <span class="highlight">TELNET</span></p></div></div>
+        <div class="qa-block"><div class="question">1(ii) What is meant by protocol in computer network?</div><div class="answer"><p><strong>Answer:</strong> A protocol is a set of rules and conventions that govern communication between network devices.</p></div></div>
+        <div class="qa-block"><div class="question">1(iii) Layer-2 Switch is also called ________</div><div class="answer"><p><strong>Answer:</strong> <span class="highlight">Bridge (Multiport Bridge)</span></p></div></div>
+        <div class="qa-block"><div class="question">1(iv) Each IP packet must contain ________</div><div class="answer"><p><strong>Answer:</strong> Source IP Address and Destination IP Address</p></div></div>
+        <div class="qa-block"><div class="question">1(v) Token bucket algorithm is an advanced form of ________</div><div class="answer"><p><strong>Answer:</strong> <span class="highlight">Leaky Bucket Algorithm</span></p></div></div>
+        <div class="qa-block"><div class="question">1(vi) Mail transfer protocol is known as ________</div><div class="answer"><p><strong>Answer:</strong> <span class="highlight">SMTP (Simple Mail Transfer Protocol)</span></p></div></div>
+        <div class="qa-block"><div class="question">1(vii) IP address of loopback address is ________</div><div class="answer"><p><strong>Answer:</strong> <span class="highlight">127.0.0.1</span></p></div></div>
+        <div class="qa-block"><div class="question">1(viii) What are the two categories of QoS attributes?</div><div class="answer"><p><strong>Answer:</strong> 1. Quantitative Attributes, 2. Qualitative Attributes</p></div></div>
+        <div class="qa-block"><div class="question">1(ix) Three main divisions of the domain name space are ________</div><div class="answer"><p><strong>Answer:</strong> Generic Domains, Country Domains, Inverse Domains</p></div></div>
+        <div class="qa-block"><div class="question">1(x) State the function of application layer in brief.</div><div class="answer"><p><strong>Answer:</strong> It provides network services directly to end users such as e-mail, file transfer, web browsing.</p></div></div>
+        <div class="qa-block"><div class="question">1(xi) Receiving window of selective repeat ARQ is ________</div><div class="answer"><p><strong>Answer:</strong> <span class="highlight">Greater than 1</span> (More than one frame)</p></div></div>
+        <div class="qa-block"><div class="question">1(xii) Why IP protocol is considered as unreliable?</div><div class="answer"><p><strong>Answer:</strong> Because IP provides best-effort delivery and does not guarantee packet delivery, sequencing, or error recovery.</p></div></div>
+    </div>
+
+    <!-- GROUP - B (Short Answer – 5 Marks) -->
+    <div class="group">
+        <div class="group-title">✍️ Group-B (Short Answer – 5 Marks)</div>
+
+        <div class="qa-block"><div class="question">2. Explain the functions of Physical Layer and Data Link Layer.</div><div class="answer"><p><span class="highlight">Physical Layer functions:</span> transmission of raw bits, defines electrical/mech specs, data rate, bit sync, line configuration, transmission mode, topology.</p><p><span class="highlight">Data Link Layer functions:</span> framing, error detection & correction, flow control, access control, reliable node-to-node delivery, MAC addressing.</p></div></div>
+
+        <div class="qa-block"><div class="question">3. Compare between CSMA/CD and CSMA/CA</div><div class="answer">
+        <table><th>CSMA/CD</th><th>CSMA/CA</th>
+        <tr><td>Collision Detection</td><td>Collision Avoidance</td>
+        <tr><td>Used in Ethernet</td><td>Used in Wireless LAN</td>
+        <tr><td>Detects collision after occurrence</td><td>Tries to avoid collision before occurrence</td>
+        <tr><td>Less overhead</td><td>More overhead (RTS/CTS)</td>
+        <tr><td>Suitable for wired networks</td><td>Suitable for wireless networks</td>
+        </table>
+        </div></div>
+
+        <div class="qa-block"><div class="question">4. Explain (i) Repeater (ii) Router (iii) Gateway</div><div class="answer"><p><strong>Repeater (Physical Layer):</strong> regenerates weak signals, extends distance. <strong>Router (Network Layer):</strong> forwards packets via IP addresses, path selection. <strong>Gateway:</strong> connects heterogeneous networks, protocol conversion.</p></div></div>
+
+        <div class="qa-block"><div class="question">5. How does firewall protect data?</div><div class="answer"><p>Firewall monitors & filters traffic: packet filtering, blocks unauthorized access, prevents malware, enforces policies, hides internal network. Acts as barrier between trusted/untrusted networks.</p></div></div>
+
+        <div class="qa-block"><div class="question">6. What is bit stuffing and why is it used?</div><div class="answer"><p><strong>Bit stuffing:</strong> inserting extra 0 after five consecutive 1s. <span class="highlight">Example:</span> 11111011111 → 1111100 1111101. <strong>Purpose:</strong> frame synchronization, avoid flag confusion, error-free delimitation. Used in HDLC.</p></div></div>
+    </div>
+
+    <!-- GROUP - C (Long Answer) -->
+    <div class="group">
+        <div class="group-title">📘 Group-C (Long Answer – 15 Marks)</div>
+
+        <div class="qa-block"><div class="question">7(a). Discuss the working of Twisted Pair Cable. (15 Marks)</div><div class="answer"><p><strong>Working:</strong> Electrical signals via copper wires; twisting reduces EMI. <strong>Types:</strong> UTP (unshielded, low cost) and STP (shielded, better noise immunity). <strong>Advantages:</strong> low cost, easy install, flexible. <strong>Disadvantages:</strong> limited bandwidth, short distance. <strong>Applications:</strong> Ethernet LAN, telephone systems, DSL.</p></div></div>
+
+        <div class="qa-block"><div class="question">7(b). What is Optical Fiber? State Advantages of Optical Fiber. (15 Marks)</div><div class="answer"><p><strong>Optical fiber:</strong> uses light signals via total internal reflection (core + cladding). <strong>Advantages:</strong> very high bandwidth, low attenuation, long distance, immune to EMI, high security, lightweight, corrosion resistant, low error rate. <strong>Disadvantages:</strong> expensive installation, fragile. <strong>Applications:</strong> internet backbone, cable TV, medical instruments.</p></div></div>
+
+        <div class="qa-block"><div class="question">8(a). Write Short Notes: (i) Stop-and-Wait Protocol (ii) Selective Repeat ARQ</div><div class="answer"><p><strong>Stop-and-Wait:</strong> sender sends one frame, waits for ACK; simple but low channel utilization. <strong>Selective Repeat ARQ:</strong> only erroneous/lost frames retransmitted; requires buffering, higher throughput, complex.</p></div></div>
+
+        <div class="qa-block"><div class="question">8(b). Discuss VRC with example. (15 Marks)</div><div class="answer"><p><strong>VRC (Vertical Redundancy Check):</strong> parity bit added for error detection. <strong>Example:</strong> data=1011001 (4 ones) → even parity bit 0 → transmitted 10110010. Detects single-bit errors but fails for even number of errors. Simple, low overhead.</p></div></div>
+
+        <div class="qa-block"><div class="question">9(a). Explain Token Bucket Algorithm. (15 Marks)</div><div class="answer"><p><strong>Token Bucket:</strong> tokens generated at fixed rate, stored in bucket. Packet transmitted only if enough tokens; allows bursts. <strong>Components:</strong> bucket, tokens, queue. Advantages over leaky bucket: supports bursts, better QoS, traffic shaping. Used in congestion control.</p><div class="code-diagram">Token Generator → Bucket → Queue → Transmission</div></div></div>
+
+        <div class="qa-block"><div class="question">9(b). Draw TCP Header and Explain Its Parts. (15 Marks)</div><div class="answer"><div class="code-diagram">0                   15 16                 31
++-------------------+--------------------+
+| Source Port       | Destination Port   |
++-------------------+--------------------+
+| Sequence Number                        |
++----------------------------------------+
+| Acknowledgment Number                  |
++----------------------------------------+
+| HLEN | Reserved | Flags | Window Size |
++----------------------------------------+
+| Checksum          | Urgent Pointer     |
++----------------------------------------+
+| Options (optional)                     |
++----------------------------------------+</div><p><strong>Fields:</strong> Source/Destination Port (identify endpoints), Sequence/Acknowledgment Numbers (reliability), Flags (SYN, ACK, FIN, etc), Window Size (flow control), Checksum (error detection), Urgent Pointer, Options.</p></div></div>
+
+        <div class="qa-block"><div class="question">10(a). Compare Static and Dynamic Routing. (15 Marks)</div><div class="answer">
+        <table><th>Static Routing</th><th>Dynamic Routing</th>
+        <tr><td>Manually configured</td><td>Automatically updated</td>
+        <tr><td>No routing protocol</td><td>Uses RIP, OSPF, etc.</td>
+        <tr><td>Low overhead, more secure</td><td>Higher overhead, flexible</td>
+        <tr><td>Slow adaptation</td><td>Fast adaptation, complex</td>
+        </table>
+        </div></div>
+
+        <div class="qa-block"><div class="question">10(b). Explain RIP. (15 Marks)</div><div class="answer"><p><strong>RIP (Routing Information Protocol):</strong> distance-vector protocol, hop count metric (max 15, 16=unreachable). Updates every 30 sec. <strong>Advantages:</strong> easy config, low complexity. <strong>Disadvantages:</strong> slow convergence, limited scalability. Versions: RIPv1, RIPv2. Suitable for small networks.</p></div></div>
+
+        <div class="qa-block"><div class="question">11(a). Explain how FTP can be used to browse websites. (15 Marks)</div><div class="answer"><p><strong>FTP (File Transfer Protocol):</strong> transfers files using TCP ports 21 (control) & 20 (data). For websites: clients upload/download web files, manage directories, publish content. Browsers support FTP URLs. Provides authentication, reliable file transfer, used for website maintenance.</p></div></div>
+
+        <div class="qa-block"><div class="question">11(b). Discuss Bluetooth Architecture and Protocols Involved. (15 Marks)</div><div class="answer"><p><strong>Bluetooth</strong> (2.4 GHz short-range). Layers: Radio → Baseband → LMP → HCI → L2CAP → RFCOMM → SDP. <strong>Piconet:</strong> 1 master + 7 slaves; Scatternet: interconnected piconets. Advantages: low power, low cost, cable replacement. Applications: wireless headphones, IoT, file sharing.</p></div></div>
+    </div>
+
+    <!-- extra exam summary -->
+    <div style="margin-top: 2.2rem; background: #eaf3f6; border-radius: 28px; padding: 1.2rem 1.8rem;">
+        <h3 style="color: #166b7a; margin-bottom: 0.4rem;">📖 Exam-focused Summary</h3>
+        <p>✔ Complete coverage of MAKAUT Computer Networks (ECC602/PCC-CS602) 2022–23 – all groups.<br>
+        ✔ Includes physical layer, data link functions, CSMA/CD vs CA, routers, firewalls, bit stuffing, optical fiber, TCP header, token bucket, RIP, FTP, Bluetooth architecture.<br>
+        ✔ Answers structured for 1, 5, and 15-mark questions with clear headings, tables, and diagrams in exam style.</p>
+    </div>
+    <footer>
+        📌 MAKAUT B.Tech (CSE/IT/ECE) – Computer Networks Solved Paper (2022–23)<br>
+        Prepared for semester examination reference & revision.
+    </footer>
+</div>
+</body>
+</html>

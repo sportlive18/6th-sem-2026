@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>MAKAUT Distributed Systems (2022–23) - Solved Paper</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #eef2f7;
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.55;
+            color: #1a2f3a;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 36px;
+            box-shadow: 0 25px 40px -12px rgba(0,0,0,0.18);
+            overflow: hidden;
+            padding: 2rem 2rem 2.5rem 2rem;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #2c6e6b;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        .header h1 {
+            font-size: 1.9rem;
+            color: #1c5a58;
+            font-weight: 700;
+        }
+        .header h2 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #2a7a76;
+            margin-top: 0.3rem;
+        }
+        .badge {
+            display: inline-block;
+            background: #e0f0ee;
+            padding: 0.2rem 1rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #1c6e6a;
+            margin-top: 0.6rem;
+        }
+        .group {
+            margin-top: 2.2rem;
+            border-left: 6px solid #2a8a86;
+            padding-left: 1.3rem;
+        }
+        .group-title {
+            background: linear-gradient(135deg, #1c6e6a, #2a8a86);
+            display: inline-block;
+            padding: 0.3rem 1.5rem;
+            border-radius: 50px;
+            color: white;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.3px;
+        }
+        .qa-block {
+            background: #fefefe;
+            margin: 1.2rem 0;
+            border-radius: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            border: 1px solid #e1eceb;
+            overflow: hidden;
+        }
+        .question {
+            background: #f9fdfc;
+            padding: 0.8rem 1.2rem;
+            font-weight: 700;
+            font-size: 1.02rem;
+            color: #1a7370;
+            border-bottom: 1px solid #dfe9e8;
+        }
+        .answer {
+            padding: 1rem 1.5rem 1.3rem 1.5rem;
+            background: white;
+        }
+        .answer p, .answer li {
+            color: #2c3e45;
+        }
+        .sub-list {
+            margin: 0.6rem 0 0.6rem 1.8rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0.9rem 0;
+            font-size: 0.9rem;
+            border-radius: 16px;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+        th, td {
+            border: 1px solid #cbdde0;
+            padding: 8px 12px;
+            vertical-align: top;
+        }
+        th {
+            background: #e2f0ef;
+            font-weight: 700;
+            color: #145c59;
+        }
+        .highlight {
+            font-weight: 600;
+            color: #1f7e7a;
+        }
+        .code-diagram {
+            font-family: monospace;
+            background: #f2f8f8;
+            padding: 0.7rem 1rem;
+            border-radius: 16px;
+            white-space: pre-line;
+            line-height: 1.4;
+            margin: 0.6rem 0;
+            font-size: 0.85rem;
+        }
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #5e7e7a;
+            border-top: 1px solid #cee0de;
+            padding-top: 1.5rem;
+        }
+        @media (max-width: 650px) {
+            .container {
+                padding: 1.2rem;
+            }
+            .question {
+                font-size: 0.9rem;
+            }
+            .group-title {
+                font-size: 1.2rem;
+            }
+            th, td {
+                font-size: 0.78rem;
+                padding: 6px;
+            }
+        }
+        .math {
+            font-family: monospace;
+            background: #f2f6f9;
+            padding: 0.2rem 0.4rem;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>📡 Distributed Systems</h1>
+        <h2>MAKAUT B.Tech (2022–23) – Solved Paper</h2>
+        <div class="badge">✅ Group-A (1 Mark) | Group-B (5 Marks) | Group-C (15 Marks) | Exam-ready answers</div>
+    </div>
+
+    <!-- GROUP - A (Very Short Answer) -->
+    <div class="group">
+        <div class="group-title">📌 Group-A (Very Short Answer – 1 Mark Each)</div>
+        <div class="qa-block"><div class="question">(i) What is data replication?</div><div class="answer"><p><strong>Answer:</strong> Creating and maintaining multiple copies of data at different sites.</p></div></div>
+        <div class="qa-block"><div class="question">(ii) What is minterm predicate?</div><div class="answer"><p><strong>Answer:</strong> A conjunction (AND combination) of simple predicates used in horizontal fragmentation.</p></div></div>
+        <div class="qa-block"><div class="question">(iii) Define homogeneous distributed database.</div><div class="answer"><p><strong>Answer:</strong> A distributed database where all sites use the same DBMS and data model.</p></div></div>
+        <div class="qa-block"><div class="question">(iv) Maximum number of functional dependencies of relation R of degree n</div><div class="answer"><p><strong>Answer:</strong> <span class="math">3^n - 2^{n+1} + 1</span></p></div></div>
+        <div class="qa-block"><div class="question">(v) Full form of OLAP</div><div class="answer"><p><strong>Answer:</strong> Online Analytical Processing</p></div></div>
+        <div class="qa-block"><div class="question">(vi) What is data dictionary?</div><div class="answer"><p><strong>Answer:</strong> Repository containing metadata about database objects.</p></div></div>
+        <div class="qa-block"><div class="question">(vii) Provide a recovery management technique.</div><div class="answer"><p><strong>Answer:</strong> Checkpointing (also logging).</p></div></div>
+        <div class="qa-block"><div class="question">(viii) Edit of a data item in transaction is done in which mode?</div><div class="answer"><p><strong>Answer:</strong> Exclusive (Write) mode</p></div></div>
+        <div class="qa-block"><div class="question">(ix) What are attribute usage values?</div><div class="answer"><p><strong>Answer:</strong> Values indicating how frequently attributes are accessed/updated.</p></div></div>
+        <div class="qa-block"><div class="question">(x) What do you mean by granularity?</div><div class="answer"><p><strong>Answer:</strong> Level/size of data item used for locking.</p></div></div>
+        <div class="qa-block"><div class="question">(xi) Disadvantage of replication</div><div class="answer"><p><strong>Answer:</strong> High storage and synchronization overhead.</p></div></div>
+        <div class="qa-block"><div class="question">(xii) Who ensures correct transaction execution during failures?</div><div class="answer"><p><strong>Answer:</strong> Recovery Manager / Transaction Manager</p></div></div>
+    </div>
+
+    <!-- GROUP - B (Short Answer – 5 Marks) -->
+    <div class="group">
+        <div class="group-title">✍️ Group-B (Short Answer – 5 Marks)</div>
+        <div class="qa-block"><div class="question">2. Advantages and Disadvantages of Replication. What is Auxiliary Program?</div><div class="answer"><p><strong>Advantages:</strong> high availability, faster local access, fault tolerance. <strong>Disadvantages:</strong> storage overhead, sync complexity. <strong>Auxiliary Program:</strong> maintains replica consistency, coordinates updates.</p></div></div>
+        <div class="qa-block"><div class="question">3. Dynamic Query Optimization Method with Example</div><div class="answer"><p>Chooses execution strategy at runtime. <strong>Example:</strong> SELECT * FROM Employee WHERE Dept='CSE' → optimizer chooses table scan/index scan based on cost.</p></div></div>
+        <div class="qa-block"><div class="question">4. Components Needed for Building Distributed Database</div><div class="answer"><p>Database, Communication Network, DDBMS, Transaction Manager, Recovery Manager, Concurrency Controller.</p><div class="code-diagram">Users → DDBMS → Network → Databases</div></div></div>
+        <div class="qa-block"><div class="question">5. Explain Distributed Cost Model</div><div class="answer"><p>Estimates execution cost: Total Cost = CPU + I/O + Communication. Minimizes data transfer and processing delay.</p></div></div>
+        <div class="qa-block"><div class="question">6. What is DDBMS? Features</div><div class="answer"><p>Distributed DBMS manages distributed databases. Features: transparency, replication, reliability, scalability, distributed query processing, recovery support.</p></div></div>
+    </div>
+
+    <!-- GROUP - C (Long Answer – 15 Marks) -->
+    <div class="group">
+        <div class="group-title">📘 Group-C (Long Answer – 15 Marks) – Detailed Solutions</div>
+
+        <div class="qa-block"><div class="question">7(i) Query Optimization Issues in DDBS (15 Marks)</div><div class="answer"><p><strong>Issues:</strong> Data localization (locate data), communication cost minimization, join optimization (efficient order), fragment access, parallel execution. Process: SQL → Parser → Optimizer → Plan → Result. Benefits: reduced response time, lower network load.</p></div></div>
+        <div class="qa-block"><div class="question">7(ii) World Wide Web Architecture and Protocols</div><div class="answer"><p>Architecture: Client → Internet → Web Server → Database Server. Protocols: HTTP, HTTPS, FTP, TCP/IP. Steps: request → processing → response.</p></div></div>
+        <div class="qa-block"><div class="question">7(iii) Data Warehousing Architecture</div><div class="answer"><p>Sources → ETL → Warehouse → OLAP → Users. Components: data sources, ETL, warehouse, data mart, reporting. Advantages: decision support, historical analysis.</p></div></div>
+        <div class="qa-block"><div class="question">8. Flat Transaction, Nested Transaction, Dirty Read, Fuzzy Read, Phantom + ACID</div><div class="answer"><p><strong>Flat:</strong> single unit. <strong>Nested:</strong> parent+children. <strong>Dirty Read:</strong> read uncommitted data. <strong>Fuzzy Read:</strong> same data different values. <strong>Phantom:</strong> row count changes. <strong>ACID:</strong> Atomicity, Consistency, Isolation, Durability.</p></div></div>
+        <div class="qa-block"><div class="question">9. Process Pair Concept and Fault Tolerant DDBMS</div><div class="answer"><p>Primary + Backup process. Types: cold/warm/hot standby. Backup takes over on failure → high availability, fast recovery.</p></div></div>
+        <div class="qa-block"><div class="question">10(a) Basic Timestamp Ordering Scheduler (BTO-SC)</div><div class="answer"><p>Uses timestamps to order transactions. Rules: read/write only if timestamp valid. Deadlock free.</p></div></div>
+        <div class="qa-block"><div class="question">10(b) Data Processor (DP) Algorithm</div><div class="answer"><p>Steps: receive operation → validate timestamp → execute → acknowledgment. Flow: Request → Process → Response.</p></div></div>
+        <div class="qa-block"><div class="question">11(a) Different Search Strategies</div><div class="answer"><p>Exhaustive (all possibilities), Heuristic (rules), Dynamic Programming (optimized recursive).</p></div></div>
+        <div class="qa-block"><div class="question">11(b) Search Space in Distributed Query Optimization</div><div class="answer"><p>All possible execution plans including join order, site selection, data movement.</p></div></div>
+        <div class="qa-block"><div class="question">11(c) SQL Simplification – Given query simplification using idempotency</div><div class="answer"><p>Original: SELECT ENO FROM ASG WHERE RESP='Analyst' AND NOT(PNO='P2' OR DUR=12) AND PNO!='P2' AND DUR!=12; <br>Simplified: SELECT ENO FROM ASG WHERE RESP='Analyst' AND PNO!='P2' AND DUR!=12;</p></div></div>
+    </div>
+
+    <!-- summary -->
+    <div style="margin-top: 2.2rem; background: #eaf5f3; border-radius: 28px; padding: 1.2rem 1.8rem;">
+        <h3 style="color: #1c6e6a; margin-bottom: 0.4rem;">📖 Exam-focused Summary – Distributed Systems (2022–23)</h3>
+        <p>✔ Complete coverage – Groups A, B, and C.<br>
+        ✔ Includes replication, minterm predicate, homogeneous DDB, OLAP, recovery, query optimization, WWW architecture, data warehousing, transaction models (flat/nested), ACID, process pair, timestamp ordering, SQL simplification.<br>
+        ✔ Answers structured for 1, 5, and 15-mark questions with exam-style presentation.</p>
+    </div>
+    <footer>
+        📌 MAKAUT B.Tech (IT/CSE) – Distributed Systems Solved Paper (2022–23) <br>
+        Prepared for semester examination reference & revision.
+    </footer>
+</div>
+</body>
+</html>

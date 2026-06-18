@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Formulation & Design · Detailed PDF-style</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #e6e9ef;
+      font-family: 'Times New Roman', 'Georgia', 'Palatino', serif;
+      display: flex;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+    .pdf-container {
+      max-width: 1100px;
+      width: 100%;
+      background: white;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.15);
+      padding: 2.5rem 3rem;
+      border-radius: 4px;
+      line-height: 1.45;
+      color: #1e1e1e;
+    }
+    /* PDF-style typography */
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      margin: 0 0 0.3rem 0;
+      text-align: center;
+      border-bottom: 2px solid #2c3e50;
+      padding-bottom: 0.6rem;
+    }
+    .subhead {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #2c3e50;
+      margin-bottom: 1.8rem;
+      font-style: italic;
+    }
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 1.6rem 0 0.6rem 0;
+      padding-bottom: 0.2rem;
+      border-bottom: 1px solid #b0b8c5;
+    }
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin: 1.2rem 0 0.4rem 0;
+    }
+    h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      font-style: italic;
+      margin: 1rem 0 0.3rem 0;
+    }
+    p {
+      margin: 0.5rem 0;
+      text-align: justify;
+    }
+    ul, ol {
+      margin: 0.3rem 0 0.8rem 1.8rem;
+    }
+    li {
+      margin: 0.2rem 0;
+    }
+    .example-box {
+      background: #f4f6fa;
+      padding: 0.6rem 1.2rem;
+      border-left: 4px solid #2c3e50;
+      margin: 0.8rem 0 1rem 0;
+      border-radius: 0 4px 4px 0;
+    }
+    .example-box p {
+      margin: 0.2rem 0;
+    }
+    .example-box strong {
+      color: #1a2a3a;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0 1.2rem 0;
+      font-size: 0.95rem;
+    }
+    th {
+      background: #eef1f6;
+      border: 1px solid #a0aab8;
+      padding: 8px 10px;
+      text-align: left;
+      font-weight: 700;
+    }
+    td {
+      border: 1px solid #a0aab8;
+      padding: 8px 10px;
+      vertical-align: top;
+    }
+    .badge {
+      font-weight: 600;
+      background: #eef1f6;
+      padding: 0.1rem 0.4rem;
+      border-radius: 12px;
+      font-size: 0.85rem;
+    }
+    .flow-row {
+      display: flex;
+      flex-wrap: wrap;
+      background: #f8fafc;
+      border-radius: 6px;
+      padding: 0.8rem 1.2rem;
+      margin: 1.2rem 0;
+      border: 1px solid #d0d7e2;
+      justify-content: center;
+      gap: 0.2rem 0.8rem;
+    }
+    .flow-item {
+      background: white;
+      padding: 0.2rem 0.8rem;
+      border-radius: 20px;
+      border: 1px solid #b8c2d0;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+    .flow-arrow {
+      font-weight: 300;
+      color: #4a5b6f;
+    }
+    .source-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem 2.5rem;
+      background: #f8fafc;
+      padding: 0.8rem 1.2rem;
+      border-radius: 6px;
+      border: 1px solid #d0d7e2;
+      margin: 0.5rem 0 1rem 0;
+    }
+    .source-cat {
+      flex: 1 0 180px;
+    }
+    .source-cat h4 {
+      margin: 0.2rem 0 0.2rem 0;
+      font-weight: 700;
+      border-bottom: 1px solid #cbd2df;
+    }
+    .source-cat ul {
+      margin: 0.2rem 0 0 1.2rem;
+    }
+    hr {
+      margin: 1.5rem 0 0.8rem 0;
+      border: 0;
+      border-top: 1px solid #d8dee8;
+    }
+    .footnote {
+      font-size: 0.9rem;
+      color: #2d4055;
+    }
+    .mono {
+      font-family: 'Courier New', monospace;
+      background: #f0f2f5;
+      padding: 0.1rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 700px) {
+      .pdf-container { padding: 1.5rem; }
+      table { font-size: 0.85rem; }
+      .flow-row { gap: 0.2rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="pdf-container">
+
+  <h1>Research Formulation and Design</h1>
+  <div class="subhead">Detailed explanation — point by point</div>
+  <p style="margin-top:0.2rem; text-align:center; font-size:1.05rem;">Foundation of any scientific or academic investigation · determines <em>what, why,</em> and <em>how</em></p>
+
+  <!-- 1. MOTIVATION & OBJECTIVES -->
+  <h2>1. Motivation and Objectives of Research</h2>
+  <h3>Motivation of Research</h3>
+  <p><strong>Main motivations:</strong></p>
+  <ul>
+    <li><strong>Desire to obtain a research degree</strong> – e.g. PhD, M.Phil., Master's dissertation.</li>
+    <li><strong>Desire to solve unsolved problems</strong> – e.g. renewable energy solutions.</li>
+    <li><strong>Intellectual curiosity</strong> – to discover new knowledge.</li>
+    <li><strong>Desire to serve society</strong> – e.g. research on disease prevention.</li>
+    <li><strong>Career advancement</strong> – publication and professional growth.</li>
+    <li><strong>Recognition and prestige</strong> – building academic reputation.</li>
+    <li><strong>Government or industrial requirements</strong> – sponsored research projects.</li>
+  </ul>
+
+  <h3>Objectives of Research</h3>
+  <p><strong>Major objectives:</strong> gain familiarity with a phenomenon; verify existing theories; discover relationships among variables; generate new knowledge; solve practical problems; predict future outcomes.</p>
+  <div class="example-box">
+    <p><strong>Example:</strong> Research Topic: <em>"Impact of social media on student performance"</em></p>
+    <p><strong>Objectives:</strong> Analyze student social media usage · Study effect on academic achievement · Suggest improvement measures.</p>
+  </div>
+
+  <!-- 2. METHODS vs METHODOLOGY -->
+  <h2>2. Research Methods vs Methodology</h2>
+  <table>
+    <tr><th>Research Methods</th><th>Research Methodology</th></tr>
+    <tr><td>Techniques used to collect data</td><td>Science of studying methods</td></tr>
+    <tr><td>Practical implementation</td><td>Theoretical framework</td></tr>
+    <tr><td>Focuses on “How”</td><td>Focuses on “Why”</td></tr>
+    <tr><td>Example: Survey, interview</td><td>Example: Justification for choosing survey</td></tr>
+  </table>
+  <div class="example-box">
+    <p><strong>Example:</strong> If studying customer satisfaction: <strong>Method:</strong> Questionnaire · <strong>Methodology:</strong> Explains why questionnaire is suitable.</p>
+  </div>
+
+  <!-- 3. TYPES OF RESEARCH -->
+  <h2>3. Types of Research</h2>
+
+  <h3>A. Descriptive vs Analytical Research</h3>
+  <table>
+    <tr><th>Descriptive Research</th><th>Analytical Research</th></tr>
+    <tr><td>Describes characteristics of existing situations.<br> <strong>Purpose:</strong> Answer <em>What, Where, When</em><br> <strong>Methods:</strong> Survey, observation, case studies.<br> <strong>Example:</strong> Surveying customer satisfaction.<br> <strong>Features:</strong> No variable manipulation, fact collection.</td>
+    <td>Uses existing information to evaluate and analyze.<br> <strong>Purpose:</strong> Answer <em>Why and How</em><br> <strong>Example:</strong> Studying reasons for customer dissatisfaction.<br> <strong>Features:</strong> Critical thinking, interpretation of data.</td></tr>
+  </table>
+
+  <h3>B. Applied vs Fundamental Research</h3>
+  <table>
+    <tr><th>Applied Research</th><th>Fundamental (Basic) Research</th></tr>
+    <tr><td>Conducted to solve real-world problems.<br> <strong>Goal:</strong> Immediate practical application.<br> <strong>Example:</strong> Developing improved crop fertilizers.<br> <strong>Characteristics:</strong> Problem-oriented, industry-oriented.</td>
+    <td>Conducted to increase knowledge.<br> <strong>Goal:</strong> Theory development.<br> <strong>Example:</strong> Studying molecular structure.<br> <strong>Characteristics:</strong> Long-term benefits, expands understanding.</td></tr>
+  </table>
+  <p><strong>Concept of Applied and Basic Research Process</strong></p>
+  <ul>
+    <li><strong>Applied Research Process:</strong> Problem → Data Collection → Analysis → Practical Solution. <em>Example: Traffic congestion → Data → Analysis → New traffic model.</em></li>
+    <li><strong>Basic Research Process:</strong> Observation → Theory → Experiment → Knowledge. <em>Example: Study atoms → Develop theory.</em></li>
+  </ul>
+
+  <h3>C. Quantitative vs Qualitative Research</h3>
+  <table>
+    <tr><th>Quantitative Research</th><th>Qualitative Research</th></tr>
+    <tr><td>Deals with numerical data.<br> <strong>Methods:</strong> Statistical analysis, surveys.<br> <strong>Example:</strong> Measuring exam scores.<br> <strong>Characteristics:</strong> Objective, large sample.</td>
+    <td>Deals with opinions and experiences.<br> <strong>Methods:</strong> Interviews, observation.<br> <strong>Example:</strong> Understanding student emotions.<br> <strong>Characteristics:</strong> Subjective, small sample.</td></tr>
+  </table>
+
+  <h3>D. Conceptual vs Empirical Research</h3>
+  <table>
+    <tr><th>Conceptual Research</th><th>Empirical Research</th></tr>
+    <tr><td>Based on ideas and theories.<br> <strong>Example:</strong> Developing economic theories.<br> <strong>Characteristics:</strong> No experiments, abstract thinking.</td>
+    <td>Based on observation and experiments.<br> <strong>Example:</strong> Testing a drug clinically.<br> <strong>Characteristics:</strong> Data-driven, evidence-based.</td></tr>
+  </table>
+
+  <!-- 4. CRITERIA -->
+  <h2>4. Criteria of Good Research</h2>
+  <ul>
+    <li><strong>Clearly Defined Purpose</strong> – objective precise.</li>
+    <li><strong>Systematic Process</strong> – steps follow sequence.</li>
+    <li><strong>Valid Data Collection</strong> – reliable instruments.</li>
+    <li><strong>Accuracy</strong> – results correct.</li>
+    <li><strong>Objectivity</strong> – avoid personal bias.</li>
+    <li><strong>Replicability</strong> – others obtain similar results.</li>
+    <li><strong>Ethical Standards</strong> – no plagiarism or manipulation.</li>
+    <li><strong>Logical Conclusions</strong> – derived from evidence.</li>
+  </ul>
+
+  <!-- 5. DEFINING & FORMULATING -->
+  <h2>5. Defining and Formulating the Research Problem</h2>
+  <p><strong>Research Problem</strong> – a specific issue selected for investigation.<br> <em>Example: Poor academic performance among students.</em></p>
+  <h4>Steps in Problem Formulation</h4>
+  <ol>
+    <li><strong>Identify broad area</strong> – e.g. Education</li>
+    <li><strong>Narrow topic</strong> – e.g. Student performance</li>
+    <li><strong>Define variables</strong> – Independent: social media use; Dependent: academic performance</li>
+    <li>Form research questions</li>
+    <li>Develop objectives</li>
+  </ol>
+
+  <!-- 6. SELECTING -->
+  <h2>6. Selecting the Research Problem</h2>
+  <p><strong>Factors to consider:</strong></p>
+  <ul>
+    <li><strong>Interest</strong> – researcher should be interested.</li>
+    <li><strong>Feasibility</strong> – time and resources available.</li>
+    <li><strong>Availability of Data</strong> – data accessible.</li>
+    <li><strong>Social Relevance</strong> – useful to society.</li>
+    <li><strong>Originality</strong> – avoid duplication.</li>
+  </ul>
+
+  <!-- 7. NECESSITY -->
+  <h2>7. Necessity of Defining the Problem</h2>
+  <ul>
+    <li>Gives research direction</li>
+    <li>Saves time and cost</li>
+    <li>Avoids unnecessary data</li>
+    <li>Improves accuracy</li>
+    <li>Helps formulate hypothesis</li>
+  </ul>
+  <div class="example-box"><p><strong>Example:</strong> Poor problem definition → Wrong conclusions.</p></div>
+
+  <!-- 8. LITERATURE REVIEW IMPORTANCE -->
+  <h2>8. Importance of Literature Review in Defining a Problem</h2>
+  <p><strong>Literature Review</strong> – systematic study of previous work.</p>
+  <ul>
+    <li>Understand existing knowledge</li>
+    <li>Avoid duplication</li>
+    <li>Discover research gaps</li>
+    <li>Improve methodology</li>
+    <li>Refine objectives</li>
+  </ul>
+
+  <!-- 9. SOURCES -->
+  <h2>9. Literature Review – Sources</h2>
+  <div class="source-grid">
+    <div class="source-cat">
+      <h4>Primary Sources</h4>
+      <ul>
+        <li>Research articles</li>
+        <li>Conference papers</li>
+        <li>Patents</li>
+        <li>Experimental reports</li>
+        <li>Thesis</li>
+      </ul>
+      <p style="margin-top:0.2rem; font-size:0.9rem;"><strong>Advantages:</strong> Authentic, detailed.</p>
+    </div>
+    <div class="source-cat">
+      <h4>Secondary Sources</h4>
+      <ul>
+        <li>Review papers</li>
+        <li>Books</li>
+        <li>Encyclopedias</li>
+      </ul>
+      <p style="margin-top:0.2rem; font-size:0.9rem;"><strong>Advantages:</strong> Easier understanding.</p>
+    </div>
+  </div>
+
+  <!-- 10. REVIEWS, MONOGRAPH, PATENT -->
+  <h2>10. Reviews, Monograph, Patents</h2>
+  <ul>
+    <li><strong>Review Article</strong> – summarizes existing studies (e.g. review of cancer treatments). Types: narrative review, systematic review, meta-analysis.</li>
+    <li><strong>Monograph</strong> – detailed publication on a single subject (e.g. entire book on nanotechnology). Characteristics: in-depth analysis, scholarly work.</li>
+    <li><strong>Patent</strong> – legal protection for inventions. Purpose: protect innovation, prevent copying. Components: Title, Abstract, Claims, Drawings.</li>
+  </ul>
+
+  <!-- 11. DATABASES -->
+  <h2>11. Research Databases</h2>
+  <p>Examples: <a href="#" style="text-decoration:none; color:#1a4d7a;">Google Scholar</a>, <a href="#" style="text-decoration:none; color:#1a4d7a;">PubMed</a>, <a href="#" style="text-decoration:none; color:#1a4d7a;">Scopus</a>, <a href="#" style="text-decoration:none; color:#1a4d7a;">Web of Science</a>, <a href="#" style="text-decoration:none; color:#1a4d7a;">IEEE Xplore</a>, <a href="#" style="text-decoration:none; color:#1a4d7a;">ScienceDirect</a>, <a href="#" style="text-decoration:none; color:#1a4d7a;">SpringerLink</a>.</p>
+
+  <!-- 12. WEB AS SOURCE -->
+  <h2>12. Web as a Source of Literature</h2>
+  <p><strong>Advantages:</strong> fast access, global information. <strong>Limitations:</strong> reliability concerns, information overload.</p>
+
+  <!-- 13. SEARCHING THE WEB -->
+  <h2>13. Searching the Web for Research</h2>
+  <ul>
+    <li><strong>Use Keywords</strong> – e.g. “machine learning healthcare applications”</li>
+    <li><strong>Boolean Operators</strong> – AND, OR, NOT (e.g. Education AND Technology)</li>
+    <li><strong>Exact Phrase Search</strong> – use quotes: "Artificial Intelligence"</li>
+    <li><strong>Use Filters</strong> – year, author, publication type</li>
+  </ul>
+
+  <!-- 14. CRITICAL LITERATURE REVIEW -->
+  <h2>14. Critical Literature Review</h2>
+  <p><strong>Critical review</strong> means evaluating literature, not only summarizing.</p>
+  <h4>Steps:</h4>
+  <ol>
+    <li>Read thoroughly</li>
+    <li>Compare studies</li>
+    <li>Identify strengths</li>
+    <li>Identify limitations</li>
+    <li>Analyze methodology</li>
+    <li>Draw conclusions</li>
+  </ol>
+  <p><strong>Questions:</strong> What was studied? How was it studied? What were limitations?</p>
+
+  <!-- 15. IDENTIFYING GAP -->
+  <h2>15. Identifying Gap Areas from Literature and Research Database</h2>
+  <p><strong>Research Gap</strong> – area that previous research has not fully addressed.</p>
+  <p><strong>Types:</strong> knowledge gap, methodological gap, population gap, theoretical gap.</p>
+  <p><strong>Process:</strong> Collect studies → Compare findings → Identify limitations → Find unanswered questions.</p>
+  <div class="example-box">
+    <p><strong>Example:</strong> Previous studies: social media effects on college students. <strong>Gap:</strong> No study on rural school students.</p>
+  </div>
+
+  <!-- 16. HYPOTHESIS -->
+  <h2>16. Development of Working Hypothesis</h2>
+  <p><strong>Hypothesis</strong> – tentative assumption to be tested.</p>
+  <div class="example-box"><p><em>“Higher social media use reduces academic performance.”</em></p></div>
+
+  <h4>Characteristics of Good Hypothesis</h4>
+  <ul>
+    <li>Clear</li><li>Specific</li><li>Testable</li><li>Logical</li><li>Measurable</li>
+  </ul>
+  <h4>Steps to Develop Hypothesis</h4>
+  <ol>
+    <li>Define problem</li><li>Review literature</li><li>Identify variables</li><li>Build assumptions</li><li>Form testable statement</li>
+  </ol>
+  <h4>Types of Hypothesis</h4>
+  <ul>
+    <li><strong>Null Hypothesis (H₀)</strong> – no relationship exists. <em>Example: Social media has no effect.</em></li>
+    <li><strong>Alternative Hypothesis (H₁)</strong> – relationship exists. <em>Example: Social media affects performance.</em></li>
+  </ul>
+
+  <!-- SUMMARY FLOW -->
+  <h2 style="margin-top:2rem;">Summary Flow of Research Formulation</h2>
+  <div class="flow-row">
+    <span class="flow-item">Research Motivation</span> <span class="flow-arrow">→</span>
+    <span class="flow-item">Define Objective</span> <span class="flow-arrow">→</span>
+    <span class="flow-item">Select Problem</span> <span class="flow-arrow">→</span>
+    <span class="flow-item">Literature Review</span> <span class="flow-arrow">→</span>
+    <span class="flow-item">Identify Research Gap</span> <span class="flow-arrow">→</span>
+    <span class="flow-item">Develop Hypothesis</span> <span class="flow-arrow">→</span>
+    <span class="flow-item">Choose Methodology</span> <span class="flow-arrow">→</span>
+    <span class="flow-item">Collect Data</span> <span class="flow-arrow">→</span>
+    <span class="flow-item">Analyze Results</span> <span class="flow-arrow">→</span>
+    <span class="flow-item">Draw Conclusion</span>
+  </div>
+  <p style="text-align:center; margin-top:0.2rem; font-style:italic; color:#2c3e50;">This entire sequence forms the Research Formulation and Research Design process.</p>
+
+  <hr>
+  <p style="font-size:0.9rem; color:#3d4f66; text-align:center;">— end of document —</p>
+</div>
+</body>
+  </html>
